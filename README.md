@@ -96,10 +96,11 @@ To easily run the web application on a Kaggle GPU instance without local setup:
 ## 🧪 Technical Details
 
 ### Inference Pre-Processing (OpenCV)
-The Streamlit app applies a custom `advanced_preprocess_for_ocr` sequence to handle imperfect environmental capture:
-1. **Otsu's Binarization & Auto-Crop:** Identifies dark regions on light backgrounds and trims whitespace padding to boost focus.
-2. **CLAHE (Contrast Limited Adaptive Histogram Equalization):** Equalizes the L-channel in LAB color space to handle unpredictable lighting and shadows.
-3. **Bilateral Filtering:** Removes minor noisy artifacts while preserving sharp edges.
+The Streamlit app applies a custom `adaptive_preprocess_for_ocr` sequence to handle imperfect environmental capture, particularly uneven illumination and shadows:
+1. **Grayscale & Denoising:** Converts the image to grayscale and applies Fast Non-Local Means Denoising to remove noise before contrast adjustments.
+2. **Illumination Normalization:** Uses morphological operations to estimate and remove uneven background illumination (shadows/blotchy backgrounds).
+3. **Contrast Normalization:** Gently enhances contrast using Min-Max normalization.
+4. **Adaptive Otsu's Binarization & Auto-Crop:** Trims image borders to remove camera artifacts, applies Otsu's thresholding to precisely isolate text, and uses a height-based padding strategy for consistent cropping.
 
 ## 📦 Dependencies
 
