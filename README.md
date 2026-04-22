@@ -64,7 +64,9 @@ pip install streamlit pyngrok Pillow opencv-python-headless
 
 ### 3. Setup Model Weights
 
-Download the exported `.pdparams` models from the Kaggle experiments for SVTR/CRNN or train them using the provided notebooks.
+Download the exported `.pdparams` models from the Kaggle experiments for SVTR/CRNN or train them using the provided notebooks:
+- [SVTR Vietnamese Handwriting Model](https://www.kaggle.com/models/thoandanh/svtr-vietnamese-handwriten)
+- [CRNN Vietnamese Handwriting Model](https://www.kaggle.com/models/thoandanh/crnn-vietnamese-handwriten)
 
 ## 🚀 Usage
 
