@@ -150,52 +150,50 @@ MODEL_MAP = {
 }
 
 # Image Preprocessing Helper
-def crop_text_region(img_cv: np.ndarray, padding: int = 10) -> np.ndarray:
-    """Auto-crop the text region to remove extra background padding."""
+def adaptive_crop_text_region(img_cv: np.ndarray, base_pad_ratio: float = 0.15) -> np.ndarray:
     gray = cv2.cvtColor(img_cv, cv2.COLOR_BGR2GRAY)
-    
-    # Threshold to find dark regions (text) on light background
     _, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
-    
-    # Find all text contours
-    coords = cv2.findNonZero(thresh)
-    if coords is None:
-        return img_cv  # Return original if no contours found
-    
+    kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
+    thresh_clean = cv2.morphologyEx(thresh, cv2.MORPH_OPEN, kernel, iterations=1)
+    coords = cv2.findNonZero(thresh_clean)
+    if coords is None: return img_cv
     x, y, w, h = cv2.boundingRect(coords)
-    
-    # Apply padding
-    x1 = max(0, x - padding)
-    y1 = max(0, y - padding)
-    x2 = min(img_cv.shape[1], x + w + padding)
-    y2 = min(img_cv.shape[0], y + h + padding)
-    
+    pad_y = int(h * base_pad_ratio)
+    pad_x = int(w * (base_pad_ratio / 3))
+    img_h, img_w = img_cv.shape[:2]
+    x1, y1 = max(0, x - pad_x), max(0, y - pad_y)
+    x2, y2 = min(img_w, x + w + pad_x), min(img_h, y + h + pad_y)
     return img_cv[y1:y2, x1:x2]
 
-def advanced_preprocess_for_ocr(img_pil: Image.Image) -> Image.Image:
+def adaptive_preprocess_for_ocr(img_pil: Image.Image) -> Image.Image:
     img_cv = np.array(img_pil)
-
-    if len(img_cv.shape) == 3 and img_cv.shape[2] == 4:
+    if len(img_cv.shape) == 3 and img_cv.shape[2] == 4: 
         img_cv = cv2.cvtColor(img_cv, cv2.COLOR_RGBA2BGR)
-    elif len(img_cv.shape) == 3 and img_cv.shape[2] == 3:
+    elif len(img_cv.shape) == 3 and img_cv.shape[2] == 3: 
         img_cv = cv2.cvtColor(img_cv, cv2.COLOR_RGB2BGR)
-    elif len(img_cv.shape) == 2:
-        img_cv = cv2.cvtColor(img_cv, cv2.COLOR_GRAY2BGR)
 
-    # Crop text region
-    img_cv = crop_text_region(img_cv, padding=15)
+    # 1. Cắt vùng chữ
+    img_cv = adaptive_crop_text_region(img_cv, base_pad_ratio=0.15)
+    
+    # 2. Chuyển sang Grayscale (OCR thường chỉ cần ảnh xám)
+    gray = cv2.cvtColor(img_cv, cv2.COLOR_BGR2GRAY)
 
-    # CLAHE on L channel
-    lab = cv2.cvtColor(img_cv, cv2.COLOR_BGR2LAB)
-    l, a, b = cv2.split(lab)
-    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
-    l = clahe.apply(l)
-    img_cv = cv2.cvtColor(cv2.merge([l, a, b]), cv2.COLOR_LAB2BGR)
+    # 3. Denoise TRƯỚC khi xử lý tương phản
+    gray = cv2.fastNlMeansDenoising(gray, h=10)
 
-    # Slight denoising
-    img_cv = cv2.bilateralFilter(img_cv, d=5, sigmaColor=30, sigmaSpace=30)
+    # 4. Illumination Normalization (Khử nền loang lổ)
+    bg_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (15, 15))
+    background = cv2.morphologyEx(gray, cv2.MORPH_DILATE, bg_kernel)
+    
+    diff = cv2.absdiff(background, gray)
+    normalized = 255 - diff
 
-    return Image.fromarray(cv2.cvtColor(img_cv, cv2.COLOR_BGR2RGB))
+    # 5. Tăng tương phản nhẹ nhàng
+    result = cv2.normalize(normalized, None, alpha=0, beta=255, norm_type=cv2.NORM_MINMAX)
+
+    result_bgr = cv2.cvtColor(result, cv2.COLOR_GRAY2BGR)
+
+    return Image.fromarray(cv2.cvtColor(result_bgr, cv2.COLOR_BGR2RGB))
 
 # Inference Output Parsing Helper
 def parse_infer_output(raw: str) -> list[dict]:
@@ -294,7 +292,7 @@ with col1:
         img_raw = Image.open(uploaded).convert("RGB")
         
         if use_preprocess:
-            img_display = advanced_preprocess_for_ocr(img_raw)
+            img_display = adaptive_preprocess_for_ocr(img_raw)
             cap_text = f"{uploaded.name} (Preprocessed)"
         else:
             img_display = img_raw
