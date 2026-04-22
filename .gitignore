@@ -1,0 +1,24 @@
+# Model Directories and Checkpoints
+/CRNN/
+/SVTR/
+*.pdparams
+*.pdopt
+*.states
+
+# Temporary files and logs
+/test_img/
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+.DS_Store
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# Temporary generation scripts
+update_ipynb.py
+update_ngrok.py
+temp_infer/
