@@ -150,17 +150,32 @@ MODEL_MAP = {
 }
 
 # Image Preprocessing Helper
-def adaptive_crop_text_region(img_cv: np.ndarray, base_pad_ratio: float = 0.15) -> np.ndarray:
+def adaptive_crop_text_region(img_cv: np.ndarray, base_pad_ratio: float = 0.15, trim_ratio: float = 0.02) -> np.ndarray:
+    img_h, img_w = img_cv.shape[:2]
+    
     gray = cv2.cvtColor(img_cv, cv2.COLOR_BGR2GRAY)
     _, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
     thresh_clean = cv2.morphologyEx(thresh, cv2.MORPH_OPEN, kernel, iterations=1)
+    
+    # Gọt bớt (trim) viền ảnh trước khi lấy bounding box để xoá nhiễu camera
+    trim_x = int(img_w * trim_ratio)
+    trim_y = int(img_h * trim_ratio)
+    if trim_y > 0 and trim_x > 0:
+        thresh_clean[0:trim_y, :] = 0
+        thresh_clean[-trim_y:, :] = 0
+        thresh_clean[:, 0:trim_x] = 0
+        thresh_clean[:, -trim_x:] = 0
+
     coords = cv2.findNonZero(thresh_clean)
     if coords is None: return img_cv
+    
     x, y, w, h = cv2.boundingRect(coords)
+    
+    # Thuật toán padding đồng bộ dựa hoàn toàn vào chiều cao (Height-based Strategy)
     pad_y = int(h * base_pad_ratio)
-    pad_x = int(w * (base_pad_ratio / 3))
-    img_h, img_w = img_cv.shape[:2]
+    pad_x = int(h * base_pad_ratio)
+    
     x1, y1 = max(0, x - pad_x), max(0, y - pad_y)
     x2, y2 = min(img_w, x + w + pad_x), min(img_h, y + h + pad_y)
     return img_cv[y1:y2, x1:x2]
