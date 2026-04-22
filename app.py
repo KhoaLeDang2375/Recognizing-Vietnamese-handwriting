@@ -187,28 +187,29 @@ def adaptive_preprocess_for_ocr(img_pil: Image.Image) -> Image.Image:
     elif len(img_cv.shape) == 3 and img_cv.shape[2] == 3: 
         img_cv = cv2.cvtColor(img_cv, cv2.COLOR_RGB2BGR)
 
-    # 1. Cắt vùng chữ
-    img_cv = adaptive_crop_text_region(img_cv, base_pad_ratio=0.15)
-    
-    # 2. Chuyển sang Grayscale (OCR thường chỉ cần ảnh xám)
+    # 1. Chuyển sang Grayscale
     gray = cv2.cvtColor(img_cv, cv2.COLOR_BGR2GRAY)
 
-    # 3. Denoise TRƯỚC khi xử lý tương phản
+    # 2. Denoise TRƯỚC khi xử lý tương phản
     gray = cv2.fastNlMeansDenoising(gray, h=10)
 
-    # 4. Illumination Normalization (Khử nền loang lổ)
+    # 3. Illumination Normalization (Khử nền loang lổ)
     bg_kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (15, 15))
     background = cv2.morphologyEx(gray, cv2.MORPH_DILATE, bg_kernel)
     
     diff = cv2.absdiff(background, gray)
     normalized = 255 - diff
 
-    # 5. Tăng tương phản nhẹ nhàng
+    # 4. Tăng tương phản nhẹ nhàng
     result = cv2.normalize(normalized, None, alpha=0, beta=255, norm_type=cv2.NORM_MINMAX)
 
+    # Định dạng lại BGR giả để tương thích API của hàm crop
     result_bgr = cv2.cvtColor(result, cv2.COLOR_GRAY2BGR)
 
-    return Image.fromarray(cv2.cvtColor(result_bgr, cv2.COLOR_BGR2RGB))
+    # 5. Cắt vùng chữ (Lúc này background đã trắng sạch 100%, OTSU sẽ cắt chính xác nét chữ đen)
+    cropped_bgr = adaptive_crop_text_region(result_bgr, base_pad_ratio=0.15)
+
+    return Image.fromarray(cv2.cvtColor(cropped_bgr, cv2.COLOR_BGR2RGB))
 
 # Inference Output Parsing Helper
 def parse_infer_output(raw: str) -> list[dict]:
