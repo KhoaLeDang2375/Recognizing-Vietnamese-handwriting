@@ -49,6 +49,8 @@ Bộ **UIT-HWDB** (UIT Vietnamese Handwritten Database) — dữ liệu chữ vi
 ├── demo-viz-ui.ipynb            # Notebook chạy web demo (viz) trên Kaggle
 ├── demo-streamlit-ui.ipynb      # Notebook demo Streamlit cũ (backup)
 ├── app.py                       # App demo Streamlit cũ (bản tham chiếu)
+├── rec_svtr_stage2.yml          # Config inference SVTR
+├── rec_crnn_stage2.yml          # Config inference CRNN
 ├── vietnamses_dict.txt          # Bảng mã 161 ký tự tiếng Việt
 └── viz/                         # Web demo (React + Gradio)
     ├── backend/                 # FastAPI + Gradio — dùng lại pipeline OCR
@@ -57,43 +59,80 @@ Bộ **UIT-HWDB** (UIT Vietnamese Handwritten Database) — dữ liệu chữ vi
 
 ## 🚀 Hướng dẫn sử dụng
 
-> 💡 **Bạn KHÔNG cần cài đặt gì trên máy tính.** Toàn bộ notebook đều chạy trên **Kaggle** (miễn phí) và **tự động cài mọi thư viện cần thiết**. Bạn chỉ cần một tài khoản Kaggle và trình duyệt web.
-
-### Mỗi notebook dùng để làm gì?
-
-| Notebook | Công dụng |
+| Notebook | Mục đích |
 | --- | --- |
-| **`demo-viz-ui.ipynb`** | **Chạy web demo** — tải ảnh chữ viết tay lên và xem mô hình nhận diện. 👉 Người mới bắt đầu từ đây. |
-| `crnn-uit-handwritten.ipynb` | Huấn luyện lại mô hình **CRNN** từ đầu. |
-| `svtr-uit-handwitten.ipynb` | Huấn luyện lại mô hình **SVTR** từ đầu. |
-| `eda-uit-handwriten.ipynb` | Phân tích, thống kê bộ dữ liệu UIT-HWDB. |
+| `demo-viz-ui.ipynb` | Chạy web demo nhận diện chữ viết tay. |
+| `crnn-uit-handwritten.ipynb` | Huấn luyện mô hình CRNN. |
+| `svtr-uit-handwitten.ipynb` | Huấn luyện mô hình SVTR. |
+| `eda-uit-handwriten.ipynb` | Phân tích bộ dữ liệu UIT-HWDB. |
 
-### 💻 — Chạy ở máy cá nhân *(nâng cao)*
+### Cách 1 — Chạy demo trên Kaggle *(khuyên dùng)*
 
-Phần này dành cho người đã quen môi trường lập trình. Yêu cầu tự cài **PaddlePaddle**, **PaddleOCR**, **Node.js 18+** và có sẵn file model weights.
+Notebook demo đã được publish sẵn trên Kaggle, kèm dataset và pre-trained model:
+
+**▶️ https://www.kaggle.com/code/khangphantrnvn/demo-ds107-viz**
+
+Mở link → bấm **Copy & Edit** → bật **GPU** và **Internet** trong Settings → **Run All**. Notebook tự cài toàn bộ môi trường; cell cuối in ra đường link `https://<id>.gradio.live` — mở link đó để dùng demo. Link hoạt động khi notebook còn chạy và có thể chia sẻ cho người khác.
+
+### Cách 2 — Huấn luyện mô hình
+
+Chạy `crnn-uit-handwritten.ipynb` hoặc `svtr-uit-handwitten.ipynb` trên Kaggle với **GPU** và dataset UIT-HWDB đính kèm. Notebook tự cài thư viện và lưu checkpoint sau huấn luyện.
+
+### Cách 3 — Chạy demo ở máy cá nhân
+
+Yêu cầu: Python 3.10+, Node.js 18+, khuyến nghị GPU NVIDIA (CUDA). Các lệnh chạy từ thư mục gốc của repo.
+
+**1. Tải mã nguồn và cài thư viện**
 
 ```bash
-# 1) Backend — Gradio API (cổng 7860)
-export PADDLEOCR_DIR=./PaddleOCR
-export DICT_PATH=./vietnamses_dict.txt
-export SVTR_CKPT=/đường/dẫn/svtr/best_accuracy
-export CRNN_CKPT=/đường/dẫn/crnn/best_accuracy
-export SVTR_CFG=/đường/dẫn/rec_svtr_stage2.yml
-export CRNN_CFG=/đường/dẫn/rec_crnn_stage2.yml
+git clone https://github.com/KhoaLeDang2375/Recognizing-Vietnamese-handwriting.git
+cd Recognizing-Vietnamese-handwriting
+git clone --depth 1 https://github.com/PaddlePaddle/PaddleOCR.git
+
+pip install paddlepaddle-gpu                 # bản CPU: pip install paddlepaddle
+pip install -r PaddleOCR/requirements.txt
+pip install -r viz/backend/requirements.txt
+```
+
+**2. Tải pre-trained model về máy**
+
+Hai mô hình đã huấn luyện được đăng trên Kaggle Models:
+
+- **SVTR** — https://www.kaggle.com/models/thoandanh/svtr-vietnamese-handwriten
+- **CRNN** — https://www.kaggle.com/models/thoandanh/crnn-vietnamese-handwriten
+
+Tải qua giao diện web: mở trang model → chọn version (framework `pytorch`, instance `default`) → bấm **Download** → giải nén.
+
+Hoặc dùng Kaggle CLI (cần file token `~/.kaggle/kaggle.json`):
+
+```bash
+pip install kaggle
+kaggle models instances versions download thoandanh/svtr-vietnamese-handwriten/pytorch/default/1
+kaggle models instances versions download thoandanh/crnn-vietnamese-handwriten/pytorch/default/1
+```
+
+Sau khi giải nén, mỗi model có một thư mục checkpoint chứa `best_accuracy.pdparams`. Ghi nhớ đường dẫn checkpoint — là đường dẫn **không kèm đuôi `.pdparams`**:
+
+- SVTR: `…/SVTR/Stage2/best_accuracy/best_accuracy`
+- CRNN: `…/CRNN/Stage2/best_accuracy`
+
+**3. Chạy demo**
+
+```bash
+# Backend — Gradio API ở cổng 7860
+export PADDLEOCR_DIR=$(pwd)/PaddleOCR
+export DICT_PATH=$(pwd)/vietnamses_dict.txt
+export SVTR_CFG=$(pwd)/rec_svtr_stage2.yml
+export CRNN_CFG=$(pwd)/rec_crnn_stage2.yml
+export SVTR_CKPT=/duong/dan/toi/SVTR/Stage2/best_accuracy/best_accuracy
+export CRNN_CKPT=/duong/dan/toi/CRNN/Stage2/best_accuracy
 python viz/backend/server.py
 
-# 2) Frontend — mở một cửa sổ terminal khác
-cd viz/frontend
-npm install
-npm run dev          # mở http://localhost:5173
+# Frontend — mở một terminal khác
+cd viz/frontend && npm install && npm run dev      # http://localhost:5173
 ```
 
-Để tạo sẵn một link công khai `*.gradio.live` (giống chế độ chạy trên Kaggle):
-
-```bash
-cd viz/frontend && npm install && npm run build && cd ../..
-GRADIO_SHARE=1 python viz/backend/server.py
-```
+> Muốn có link công khai `*.gradio.live` thay cho localhost: build frontend bằng `npm run build` trong `viz/frontend`, rồi chạy backend với `GRADIO_SHARE=1 python viz/backend/server.py`.
 
 ## 🛠 Công nghệ sử dụng
 
