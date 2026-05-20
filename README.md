@@ -68,27 +68,7 @@ Bộ **UIT-HWDB** (UIT Vietnamese Handwritten Database) — dữ liệu chữ vi
 | `svtr-uit-handwitten.ipynb` | Huấn luyện lại mô hình **SVTR** từ đầu. |
 | `eda-uit-handwriten.ipynb` | Phân tích, thống kê bộ dữ liệu UIT-HWDB. |
 
-### ▶️ Cách 1 — Chạy web demo (khuyên dùng cho người mới)
-
-Làm theo từng bước, **không cần cài bất cứ thứ gì**:
-
-1. Đăng nhập [kaggle.com](https://www.kaggle.com) — tạo tài khoản miễn phí nếu chưa có.
-2. Bấm **Create → New Notebook**. Vào menu **File → Import Notebook**, chọn tab **GitHub** và dán link, hoặc tải lên trực tiếp file `demo-viz-ui.ipynb`:
-   `https://github.com/KhoaLeDang2375/Recognizing-Vietnamese-handwriting/blob/main/demo-viz-ui.ipynb`
-3. Mở khung **Settings** (bên phải) và thiết lập:
-   - **Accelerator:** chọn `GPU`
-   - **Internet:** bật `On`
-4. Bấm **Add Input**, thêm bộ dữ liệu UIT-HWDB và 2 model đã huấn luyện sẵn:
-   [SVTR model](https://www.kaggle.com/models/thoandanh/svtr-vietnamese-handwriten) · [CRNN model](https://www.kaggle.com/models/thoandanh/crnn-vietnamese-handwriten)
-5. Bấm **Run All** và chờ khoảng **3–5 phút** — notebook sẽ tự cài thư viện và build giao diện.
-6. Kéo xuống cell cuối, copy đường link có dạng `https://xxxx.gradio.live`.
-7. Mở link đó trên trình duyệt → **dùng demo ngay**. Link còn hoạt động khi notebook còn chạy, và có thể gửi cho người khác cùng xem.
-
-### 🔁 Cách 2 — Huấn luyện lại mô hình
-
-Mở `crnn-uit-handwritten.ipynb` hoặc `svtr-uit-handwitten.ipynb` trên Kaggle, bấm **Add Input** để đính kèm dataset UIT-HWDB, bật **GPU** trong Settings, rồi bấm **Run All**. Notebook tự cài thư viện và lưu checkpoint mô hình sau khi huấn luyện.
-
-### 💻 Cách 3 — Chạy ở máy cá nhân *(nâng cao)*
+### 💻 — Chạy ở máy cá nhân *(nâng cao)*
 
 Phần này dành cho người đã quen môi trường lập trình. Yêu cầu tự cài **PaddlePaddle**, **PaddleOCR**, **Node.js 18+** và có sẵn file model weights.
 
