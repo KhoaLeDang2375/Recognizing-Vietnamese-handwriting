@@ -15,6 +15,8 @@ One file, two modes:
 
 from __future__ import annotations
 
+import base64
+import io
 import os
 import secrets
 import sys
@@ -57,6 +59,20 @@ CORS_ORIGINS = [
 
 
 # ── Inference adapter for Gradio ────────────────────────────────────────────
+def _encode_preview(img: Image.Image, max_w: int = 1000) -> str:
+    """Encode the image actually fed to the model as a compact JPEG data URL.
+
+    Downscaled to `max_w` so the response stays small even for phone photos.
+    """
+    im = img.convert("RGB")
+    if im.width > max_w:
+        new_h = round(im.height * max_w / im.width)
+        im = im.resize((max_w, new_h), Image.Resampling.LANCZOS)
+    buf = io.BytesIO()
+    im.save(buf, format="JPEG", quality=85)
+    return "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode()
+
+
 def infer(
     image: Image.Image | None,
     model_choice: str,
@@ -72,6 +88,7 @@ def infer(
           "raw": str,                 # raw stdout+stderr from infer_rec.py
           "model": str,               # algo name (SVTR / CRNN)
           "preprocessed": bool,
+          "processed_image": str | None,  # data URL of the image fed to model
           "error": str | None,
         }
     """
@@ -83,6 +100,7 @@ def infer(
             "raw": "",
             "model": "",
             "preprocessed": False,
+            "processed_image": None,
             "error": "No image provided.",
         }
     if model_choice not in MODEL_MAP:
@@ -93,11 +111,13 @@ def infer(
             "raw": "",
             "model": "",
             "preprocessed": False,
+            "processed_image": None,
             "error": f"Unknown model: {model_choice!r}",
         }
 
     img_rgb = image.convert("RGB")
     img_to_save = adaptive_preprocess_for_ocr(img_rgb) if use_preprocess else img_rgb
+    processed_preview = _encode_preview(img_to_save)
 
     os.makedirs(TEMP_DIR, exist_ok=True)
     tmp_path = os.path.join(TEMP_DIR, "temp_infer.jpg")
@@ -113,6 +133,7 @@ def infer(
             "raw": traceback.format_exc(),
             "model": MODEL_MAP[model_choice]["algo"],
             "preprocessed": bool(use_preprocess),
+            "processed_image": processed_preview,
             "error": str(e),
         }
 
@@ -123,6 +144,7 @@ def infer(
         "raw": raw_out,
         "model": MODEL_MAP[model_choice]["algo"],
         "preprocessed": bool(use_preprocess),
+        "processed_image": processed_preview,
         "error": None,
     }
 

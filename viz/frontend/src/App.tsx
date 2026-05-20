@@ -7,6 +7,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { ConfigPanel, type ConfigValues } from "@/components/ConfigPanel";
 import { UploadCard, type UploadedImage } from "@/components/UploadCard";
 import { ResultsPanel } from "@/components/ResultsPanel";
+import { ProcessedImageCard } from "@/components/ProcessedImageCard";
 import { ArchitectureSection } from "@/components/ArchitectureSection";
 import { TrainingSection } from "@/components/TrainingSection";
 import { BenchmarkSection } from "@/components/BenchmarkSection";
@@ -77,6 +78,16 @@ export default function App() {
               />
             </div>
           </div>
+
+          {response?.processed_image ? (
+            <div className="mt-6">
+              <ProcessedImageCard
+                processedImage={response.processed_image}
+                preprocessed={response.preprocessed}
+                originalUrl={image?.url}
+              />
+            </div>
+          ) : null}
         </section>
 
         <ArchitectureSection />

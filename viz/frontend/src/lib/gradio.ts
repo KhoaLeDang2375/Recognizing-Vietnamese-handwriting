@@ -9,6 +9,7 @@ export type InferResponse = {
   raw: string;
   model: string;
   preprocessed: boolean;
+  processed_image: string | null;
   error: string | null;
 };
 
@@ -51,6 +52,7 @@ const FALLBACK: InferResponse = {
   raw: "",
   model: "",
   preprocessed: false,
+  processed_image: null,
   error: "Empty response from backend.",
 };
 
