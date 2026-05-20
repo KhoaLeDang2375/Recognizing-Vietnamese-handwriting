@@ -1,0 +1,12 @@
+# Frontend stack lives in viz/frontend; this file is backend-only.
+# PaddlePaddle + PaddleOCR are NOT listed here — they are installed by the
+# existing notebook (demo-streamlit-ui.ipynb) into the runtime env. Don't
+# pin them here; we want the same wheels app.py runs against.
+
+gradio>=4.0,<6
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9
+Pillow>=10
+opencv-python-headless>=4.8
+numpy>=1.24
