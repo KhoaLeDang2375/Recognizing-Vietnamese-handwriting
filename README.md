@@ -1,128 +1,108 @@
-# ✍️ Vietnamese Handwriting OCR
+# ✍️ Nhận diện chữ viết tay tiếng Việt
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
-![PaddleOCR](https://img.shields.io/badge/PaddleOCR-3.0.0-deepskyblue?logo=paddlepaddle&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-UI-FF4B4B?logo=streamlit&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-Image%20Processing-5C3EE8?logo=opencv&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+> Đồ án môn **Tư duy tính toán cho Khoa học Dữ liệu (DS107)** — Trường Đại học Công nghệ Thông tin, ĐHQG-HCM.
 
-## 📌 Overview
+Xây dựng và so sánh hai mô hình OCR nhận diện chữ viết tay tiếng Việt trên bộ dữ liệu **UIT-HWDB**, kèm một web demo trực quan.
 
-This project provides a robust Machine Learning solution for **Vietnamese Handwriting Recognition**. Built on top of the powerful **PaddleOCR** ecosystem, it achieves high-accuracy character sequence recognition targeted at the UIT-HWDB (Vietnamese Handwritten Database). 
+## 👥 Thành viên nhóm
 
-It specifically trains and fine-tunes two state-of-the-art architectures:
-- **SVTR (Single Visual model for Text Recognition):** A Transformer-based architecture prioritizing ultimate accuracy.
-- **CRNN (Convolutional Recurrent Neural Network):** A CNN-RNN hybrid for high-speed, lightweight inference.
+| Họ và tên | MSSV |
+| --- | --- |
+| Lê Đăng Khoa | 23520740 |
+| Lại Thị Thu Hương | 23520585 |
+| Phan Trần Văn Khang | 23520708 |
+| Trần Thị Kim Anh | 23520079 |
 
-The project includes an end-to-end pipeline from a custom 2-stage training strategy (Warmup & Full Fine-tuning) on Kaggle Notebooks to a production-ready **Streamlit web application** for interactive real-time inference.
+## 📌 Tổng quan đề tài
 
-## ✨ Features
+Đề tài giải quyết bài toán nhận diện (OCR) ảnh dòng chữ viết tay tiếng Việt thành văn bản số. Khó khăn đặc thù của tiếng Việt nằm ở hệ thống dấu thanh và dấu phụ dày đặc, nhiều ký tự dễ nhầm lẫn, cùng với nét chữ viết tay biến dạng và hiện tượng dính nét.
 
-* **Dual Architecture Support:** Switch seamlessly between SVTR (Accuracy) and CRNN (Speed).
-* **2-Stage Fine-Tuning Strategy:** Employs CTC Head warmup followed by full backbone fine-tuning tailored for Vietnamese text constraints.
-* **Custom Data Augmentation:** Built-in `HandwritingAug` pipeline designed explicitly to prevent overfitting on handwritten strokes.
-* **Interactive UI:** A highly polished Streamlit web app with dynamic OpenCV-based adaptive thresholding and auto-cropping for degraded images.
-* **Kaggle-Ready Deployment:** Specialized notebooks to train and expose the Streamlit UI directly from Kaggle via `ngrok`.
+Nhóm triển khai và so sánh **hai kiến trúc** tiêu biểu trên engine **PaddleOCR**:
 
-## 🏗 Project Structure
+- **CRNN** — Backbone ResNet-34 + Neck BiLSTM (hidden 256) + Head CTC. Hướng tiếp cận kết hợp CNN với RNN tuần tự.
+- **SVTR** — Backbone SVTRNet phân cấp 3 stage (Local/Global Mixer) + Neck SequenceEncoder + Head CTC. Hướng tiếp cận Transformer thuần thị giác.
+
+Cả hai mô hình dùng chung pipeline xử lý và hàm mất mát CTC (bảng mã 161 lớp ký tự), được huấn luyện theo chiến lược **2-Stage Fine-Tuning**:
+
+1. **Stage 1 — Warm-up:** đóng băng Backbone, chỉ huấn luyện Neck/Head để căn chỉnh với phân phối ký tự tiếng Việt.
+2. **Stage 2 — Fine-tuning:** mở khóa toàn mạng, tinh chỉnh sâu với learning rate nhỏ.
+
+### Dữ liệu
+
+Bộ **UIT-HWDB** (UIT Vietnamese Handwritten Database) — dữ liệu chữ viết tay tiếng Việt dạng offline. Đồ án sử dụng tập con **UIT-HWDB-line** gồm 7.273 dòng văn bản; bảng mã ký tự gồm 161 lớp (160 ký tự tiếng Việt + 1 ký tự blank cho thuật toán CTC).
+
+### Kết quả chính
+
+| Mô hình | Word Accuracy | CER ↓ | WER ↓ | NED ↓ | Confidence |
+| --- | :---: | :---: | :---: | :---: | :---: |
+| CRNN | ≈ 0.00% | 37.40% | 86.80% | 0.374 | 61.3% |
+| **SVTR** | **11.44%** | **9.50%** | **29.10%** | **0.095** | **92.7%** |
+
+→ **SVTR** vượt trội trên toàn bộ chỉ số và là kiến trúc được nhóm lựa chọn.
+
+## 🗂 Cấu trúc dự án
 
 ```text
-├── CRNN/                            # CRNN output logs & inference results
-├── SVTR/                            # SVTR output logs & inference results
-├── test_img/                        # Sample handwritten images for demonstration
-├── app.py                           # Main Streamlit web application
-├── crnn-uit-handwritten.ipynb       # Jupyter Notebook for Training CRNN (2-stage)
-├── svtr-uit-handwitten.ipynb        # Jupyter Notebook for Training SVTR (2-stage)
-├── demo-streamlit-ui.ipynb          # Deployment notebook integrating ngrok + Streamlit
-├── vietnamses_dict.txt              # Unified 161-character Vietnamese dictionary 
-└── README.md                        # Project documentation
+├── crnn-uit-handwritten.ipynb   # Notebook huấn luyện CRNN (2-stage)
+├── svtr-uit-handwitten.ipynb    # Notebook huấn luyện SVTR (2-stage)
+├── eda-uit-handwriten.ipynb     # Notebook phân tích dữ liệu (EDA)
+├── demo-viz-ui.ipynb            # Notebook chạy web demo (viz) trên Kaggle
+├── demo-streamlit-ui.ipynb      # Notebook demo Streamlit cũ (backup)
+├── app.py                       # App demo Streamlit cũ (bản tham chiếu)
+├── vietnamses_dict.txt          # Bảng mã 161 ký tự tiếng Việt
+└── viz/                         # Web demo (React + Gradio)
+    ├── backend/                 # FastAPI + Gradio — dùng lại pipeline OCR
+    └── frontend/                # React + Vite + Tailwind — trang báo cáo + demo
 ```
 
-## ⚙️ Installation
+## 🚀 Cách chạy code
 
-### 1. Requirements
+### 1. Huấn luyện mô hình (Kaggle, cần GPU)
 
-Ensure you have Python 3.8+ installed. This project relies on `paddlepaddle-gpu` (or standard `paddlepaddle` for CPU) and `PaddleOCR`.
+Mở `crnn-uit-handwritten.ipynb` hoặc `svtr-uit-handwitten.ipynb` trên Kaggle, đính kèm dataset UIT-HWDB, bật GPU rồi chạy toàn bộ cell. Notebook `eda-uit-handwriten.ipynb` dùng để phân tích, thống kê bộ dữ liệu.
+
+### 2. Chạy web demo trên Kaggle — *cách nhanh nhất*
+
+`demo-viz-ui.ipynb` tự cài môi trường, build giao diện và tạo một URL công khai.
+
+1. Tải `demo-viz-ui.ipynb` lên Kaggle (hoặc *File → Import Notebook*).
+2. Bật **GPU** và **Internet** trong phần Settings.
+3. **Add Input:** dataset UIT-HWDB và 2 model đã huấn luyện ([SVTR](https://www.kaggle.com/models/thoandanh/svtr-vietnamese-handwriten), [CRNN](https://www.kaggle.com/models/thoandanh/crnn-vietnamese-handwriten)).
+4. **Run All** → notebook in ra URL `https://xxxx.gradio.live`, mở để dùng demo.
+
+### 3. Chạy web demo ở máy local
+
+Yêu cầu: đã cài PaddlePaddle + PaddleOCR và có sẵn model weights; Node.js 18+.
 
 ```bash
-# Clone the repository
-git clone https://github.com/KhoaLeDang2375/Recognizing-Vietnamese-handwriting.git
-cd Recognizing-Vietnamese-handwriting
+# 1) Backend — Gradio API (cổng 7860)
+export PADDLEOCR_DIR=./PaddleOCR
+export DICT_PATH=./vietnamses_dict.txt
+export SVTR_CKPT=/đường/dẫn/svtr/best_accuracy
+export CRNN_CKPT=/đường/dẫn/crnn/best_accuracy
+export SVTR_CFG=/đường/dẫn/rec_svtr_stage2.yml
+export CRNN_CFG=/đường/dẫn/rec_crnn_stage2.yml
+python viz/backend/server.py
 
-# Clone PaddleOCR locally
-git clone --depth 1 https://github.com/PaddlePaddle/PaddleOCR.git
-cd PaddleOCR
-pip install -r requirements.txt
-cd ..
+# 2) Frontend — mở terminal khác
+cd viz/frontend
+npm install
+npm run dev          # http://localhost:5173
 ```
 
-### 2. Python Dependencies
+Hoặc chạy gộp trong một tiến trình, có sẵn link công khai `*.gradio.live`:
 
 ```bash
-pip install streamlit pyngrok Pillow opencv-python-headless
+cd viz/frontend && npm install && npm run build && cd ../..
+GRADIO_SHARE=1 python viz/backend/server.py
 ```
 
-### 3. Setup Model Weights
+> Bản demo Streamlit cũ (`app.py` + `demo-streamlit-ui.ipynb`) được giữ lại làm backup, chạy bằng `streamlit run app.py`.
 
-Download the exported `.pdparams` models from the Kaggle experiments for SVTR/CRNN or train them using the provided notebooks:
-- [SVTR Vietnamese Handwriting Model](https://www.kaggle.com/models/thoandanh/svtr-vietnamese-handwriten)
-- [CRNN Vietnamese Handwriting Model](https://www.kaggle.com/models/thoandanh/crnn-vietnamese-handwriten)
+## 🛠 Công nghệ sử dụng
 
-## 🚀 Usage
+PaddleOCR · PaddlePaddle · OpenCV · FastAPI · Gradio · React · Vite · TypeScript · Tailwind CSS
 
-### Running the Web Application (Streamlit)
+---
 
-The UI allows for uploading line-level handwriting images and processing them instantly.
-
-```bash
-# Set environment variables pointing to your downloaded model weights & configs
-export PADDLEOCR_DIR="./PaddleOCR"
-export DICT_PATH="./vietnamses_dict.txt"
-export SVTR_CKPT="/path/to/svtr/best_accuracy"
-export CRNN_CKPT="/path/to/crnn/best_accuracy"
-export SVTR_CFG="/path/to/rec_svtr_stage2.yml"
-export CRNN_CFG="/path/to/rec_crnn_stage2.yml"
-
-# Launch the app
-streamlit run app.py
-```
-
-### Kaggle Cloud Deployment
-
-To easily run the web application on a Kaggle GPU instance without local setup:
-1. Open `demo-streamlit-ui.ipynb` in your Kaggle environment.
-2. Attach your PaddleOCR model dataset.
-3. Configure your `NGROK_TOKEN` within Kaggle Secrets.
-4. Run all cells to receive a live public Ngrok URL!
-
-## 🧪 Technical Details
-
-### Inference Pre-Processing (OpenCV)
-The Streamlit app applies a custom `adaptive_preprocess_for_ocr` sequence to handle imperfect environmental capture, particularly uneven illumination and shadows:
-1. **Grayscale & Denoising:** Converts the image to grayscale and applies Fast Non-Local Means Denoising to remove noise before contrast adjustments.
-2. **Illumination Normalization:** Uses morphological operations to estimate and remove uneven background illumination (shadows/blotchy backgrounds).
-3. **Contrast Normalization:** Gently enhances contrast using Min-Max normalization.
-4. **Adaptive Otsu's Binarization & Auto-Crop:** Trims image borders to remove camera artifacts, applies Otsu's thresholding to precisely isolate text, and uses a height-based padding strategy for consistent cropping.
-
-## 📦 Dependencies
-
-* `paddlepaddle-gpu` (v2.6+ / v3.0+)
-* `paddleocr`
-* `streamlit`
-* `opencv-python-headless`
-* `Pillow`
-* `pyngrok` (for cloud UI hosting)
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to open an issue or submit a pull request if you want to propose performance improvements, UI enhancements, or add new features like post-correction Spell Checkers.
-
-1. Fork the repo
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+Đồ án phục vụ mục đích học tập — môn Tư duy tính toán cho Khoa học Dữ liệu (DS107).
