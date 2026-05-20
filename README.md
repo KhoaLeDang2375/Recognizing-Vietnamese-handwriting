@@ -55,24 +55,42 @@ Bộ **UIT-HWDB** (UIT Vietnamese Handwritten Database) — dữ liệu chữ vi
     └── frontend/                # React + Vite + Tailwind — trang báo cáo + demo
 ```
 
-## 🚀 Cách chạy code
+## 🚀 Hướng dẫn sử dụng
 
-### 1. Huấn luyện mô hình (Kaggle, cần GPU)
+> 💡 **Bạn KHÔNG cần cài đặt gì trên máy tính.** Toàn bộ notebook đều chạy trên **Kaggle** (miễn phí) và **tự động cài mọi thư viện cần thiết**. Bạn chỉ cần một tài khoản Kaggle và trình duyệt web.
 
-Mở `crnn-uit-handwritten.ipynb` hoặc `svtr-uit-handwitten.ipynb` trên Kaggle, đính kèm dataset UIT-HWDB, bật GPU rồi chạy toàn bộ cell. Notebook `eda-uit-handwriten.ipynb` dùng để phân tích, thống kê bộ dữ liệu.
+### Mỗi notebook dùng để làm gì?
 
-### 2. Chạy web demo trên Kaggle — *cách nhanh nhất*
+| Notebook | Công dụng |
+| --- | --- |
+| **`demo-viz-ui.ipynb`** | **Chạy web demo** — tải ảnh chữ viết tay lên và xem mô hình nhận diện. 👉 Người mới bắt đầu từ đây. |
+| `crnn-uit-handwritten.ipynb` | Huấn luyện lại mô hình **CRNN** từ đầu. |
+| `svtr-uit-handwitten.ipynb` | Huấn luyện lại mô hình **SVTR** từ đầu. |
+| `eda-uit-handwriten.ipynb` | Phân tích, thống kê bộ dữ liệu UIT-HWDB. |
 
-`demo-viz-ui.ipynb` tự cài môi trường, build giao diện và tạo một URL công khai.
+### ▶️ Cách 1 — Chạy web demo (khuyên dùng cho người mới)
 
-1. Tải `demo-viz-ui.ipynb` lên Kaggle (hoặc *File → Import Notebook*).
-2. Bật **GPU** và **Internet** trong phần Settings.
-3. **Add Input:** dataset UIT-HWDB và 2 model đã huấn luyện ([SVTR](https://www.kaggle.com/models/thoandanh/svtr-vietnamese-handwriten), [CRNN](https://www.kaggle.com/models/thoandanh/crnn-vietnamese-handwriten)).
-4. **Run All** → notebook in ra URL `https://xxxx.gradio.live`, mở để dùng demo.
+Làm theo từng bước, **không cần cài bất cứ thứ gì**:
 
-### 3. Chạy web demo ở máy local
+1. Đăng nhập [kaggle.com](https://www.kaggle.com) — tạo tài khoản miễn phí nếu chưa có.
+2. Bấm **Create → New Notebook**. Vào menu **File → Import Notebook**, chọn tab **GitHub** và dán link, hoặc tải lên trực tiếp file `demo-viz-ui.ipynb`:
+   `https://github.com/KhoaLeDang2375/Recognizing-Vietnamese-handwriting/blob/main/demo-viz-ui.ipynb`
+3. Mở khung **Settings** (bên phải) và thiết lập:
+   - **Accelerator:** chọn `GPU`
+   - **Internet:** bật `On`
+4. Bấm **Add Input**, thêm bộ dữ liệu UIT-HWDB và 2 model đã huấn luyện sẵn:
+   [SVTR model](https://www.kaggle.com/models/thoandanh/svtr-vietnamese-handwriten) · [CRNN model](https://www.kaggle.com/models/thoandanh/crnn-vietnamese-handwriten)
+5. Bấm **Run All** và chờ khoảng **3–5 phút** — notebook sẽ tự cài thư viện và build giao diện.
+6. Kéo xuống cell cuối, copy đường link có dạng `https://xxxx.gradio.live`.
+7. Mở link đó trên trình duyệt → **dùng demo ngay**. Link còn hoạt động khi notebook còn chạy, và có thể gửi cho người khác cùng xem.
 
-Yêu cầu: đã cài PaddlePaddle + PaddleOCR và có sẵn model weights; Node.js 18+.
+### 🔁 Cách 2 — Huấn luyện lại mô hình
+
+Mở `crnn-uit-handwritten.ipynb` hoặc `svtr-uit-handwitten.ipynb` trên Kaggle, bấm **Add Input** để đính kèm dataset UIT-HWDB, bật **GPU** trong Settings, rồi bấm **Run All**. Notebook tự cài thư viện và lưu checkpoint mô hình sau khi huấn luyện.
+
+### 💻 Cách 3 — Chạy ở máy cá nhân *(nâng cao)*
+
+Phần này dành cho người đã quen môi trường lập trình. Yêu cầu tự cài **PaddlePaddle**, **PaddleOCR**, **Node.js 18+** và có sẵn file model weights.
 
 ```bash
 # 1) Backend — Gradio API (cổng 7860)
@@ -84,20 +102,18 @@ export SVTR_CFG=/đường/dẫn/rec_svtr_stage2.yml
 export CRNN_CFG=/đường/dẫn/rec_crnn_stage2.yml
 python viz/backend/server.py
 
-# 2) Frontend — mở terminal khác
+# 2) Frontend — mở một cửa sổ terminal khác
 cd viz/frontend
 npm install
-npm run dev          # http://localhost:5173
+npm run dev          # mở http://localhost:5173
 ```
 
-Hoặc chạy gộp trong một tiến trình, có sẵn link công khai `*.gradio.live`:
+Để tạo sẵn một link công khai `*.gradio.live` (giống chế độ chạy trên Kaggle):
 
 ```bash
 cd viz/frontend && npm install && npm run build && cd ../..
 GRADIO_SHARE=1 python viz/backend/server.py
 ```
-
-> Bản demo Streamlit cũ (`app.py` + `demo-streamlit-ui.ipynb`) được giữ lại làm backup, chạy bằng `streamlit run app.py`.
 
 ## 🛠 Công nghệ sử dụng
 
