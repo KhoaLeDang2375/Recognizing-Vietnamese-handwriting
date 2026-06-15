@@ -4,7 +4,7 @@
 
 Xây dựng và so sánh hai mô hình OCR nhận diện chữ viết tay tiếng Việt trên bộ dữ liệu **UIT-HWDB**, kèm một web demo trực quan.
 
-## 👥 Thành viên nhóm
+##  Thành viên nhóm
 
 | Họ và tên | MSSV |
 | --- | --- |
@@ -13,7 +13,7 @@ Xây dựng và so sánh hai mô hình OCR nhận diện chữ viết tay tiến
 | Phan Trần Văn Khang | 23520708 |
 | Trần Thị Kim Anh | 23520079 |
 
-## 📌 Tổng quan đề tài
+##  Tổng quan đề tài
 
 Đề tài giải quyết bài toán nhận diện (OCR) ảnh dòng chữ viết tay tiếng Việt thành văn bản số. Khó khăn đặc thù của tiếng Việt nằm ở hệ thống dấu thanh và dấu phụ dày đặc, nhiều ký tự dễ nhầm lẫn, cùng với nét chữ viết tay biến dạng và hiện tượng dính nét.
 
@@ -40,7 +40,7 @@ Bộ **UIT-HWDB** (UIT Vietnamese Handwritten Database) — dữ liệu chữ vi
 
 → **SVTR** vượt trội trên toàn bộ chỉ số và là kiến trúc được nhóm lựa chọn.
 
-## 🗂 Cấu trúc dự án
+##  Cấu trúc dự án
 
 ```text
 ├── crnn-uit-handwritten.ipynb   # Notebook huấn luyện CRNN (2-stage)
@@ -57,7 +57,7 @@ Bộ **UIT-HWDB** (UIT Vietnamese Handwritten Database) — dữ liệu chữ vi
     └── frontend/                # React + Vite + Tailwind — trang báo cáo + demo
 ```
 
-## 🚀 Hướng dẫn sử dụng
+##  Hướng dẫn sử dụng
 
 | Notebook | Mục đích |
 | --- | --- |
@@ -70,7 +70,7 @@ Bộ **UIT-HWDB** (UIT Vietnamese Handwritten Database) — dữ liệu chữ vi
 
 Notebook demo đã được publish sẵn trên Kaggle, kèm dataset và pre-trained model:
 
-**▶️ https://www.kaggle.com/code/khangphantrnvn/demo-ds107-viz**
+** https://www.kaggle.com/code/khangphantrnvn/demo-ds107-viz**
 
 Mở link → bấm **Copy & Edit** → bật **GPU** và **Internet** trong Settings → **Run All**. Notebook tự cài toàn bộ môi trường; cell cuối in ra đường link `https://<id>.gradio.live` — mở link đó để dùng demo. Link hoạt động khi notebook còn chạy và có thể chia sẻ cho người khác.
 
@@ -134,7 +134,7 @@ cd viz/frontend && npm install && npm run dev      # http://localhost:5173
 
 > Muốn có link công khai `*.gradio.live` thay cho localhost: build frontend bằng `npm run build` trong `viz/frontend`, rồi chạy backend với `GRADIO_SHARE=1 python viz/backend/server.py`.
 
-## 🛠 Công nghệ sử dụng
+##  Công nghệ sử dụng
 
 PaddleOCR · PaddlePaddle · OpenCV · FastAPI · Gradio · React · Vite · TypeScript · Tailwind CSS
 
