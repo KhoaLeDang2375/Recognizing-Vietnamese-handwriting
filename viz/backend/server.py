@@ -42,17 +42,15 @@ from inference import (
 print("[viz] Loading spell correction model 'bmd1905/vietnamese-correction-v2'...")
 try:
     import torch
-    from transformers import pipeline
-    device = 0 if torch.cuda.is_available() else -1
-    corrector = pipeline(
-        "text2text-generation",
-        model="bmd1905/vietnamese-correction-v2",
-        device=device
-    )
+    from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    corrector_tokenizer = AutoTokenizer.from_pretrained("bmd1905/vietnamese-correction-v2")
+    corrector_model = AutoModelForSeq2SeqLM.from_pretrained("bmd1905/vietnamese-correction-v2").to(device)
     print(f"[viz] Spell correction model loaded successfully on device: {device}")
 except Exception as e:
     print(f"[viz] Could not load spell correction model: {e}", file=sys.stderr)
-    corrector = None
+    corrector_tokenizer = None
+    corrector_model = None
 
 
 def spell_correct(raw_text: str) -> str:
@@ -68,8 +66,8 @@ def spell_correct(raw_text: str) -> str:
         print("-" * 40, flush=True)
         return raw_text
         
-    if corrector is None:
-        print("[viz][spell_correct] Corrector model is not loaded (corrector is None)!", flush=True)
+    if corrector_model is None or corrector_tokenizer is None:
+        print("[viz][spell_correct] Corrector model or tokenizer is not loaded!", flush=True)
         print("-" * 40, flush=True)
         return raw_text + " (Spell correction model not loaded)"
 
@@ -91,14 +89,31 @@ def spell_correct(raw_text: str) -> str:
 
     try:
         t0 = time.time()
-        # Call the pipeline on the batch
-        batch_results = corrector(non_empty_lines, max_length=256, batch_size=len(non_empty_lines))
+        # Tokenize batch
+        inputs = corrector_tokenizer(
+            non_empty_lines,
+            padding=True,
+            truncation=True,
+            max_length=256,
+            return_tensors="pt"
+        ).to(corrector_model.device)
+        
+        # Generate predictions
+        with torch.no_grad():
+            outputs = corrector_model.generate(**inputs, max_length=256)
+            
+        # Decode predictions
+        batch_results = [
+            corrector_tokenizer.decode(out, skip_special_tokens=True)
+            for out in outputs
+        ]
+        
         elapsed = time.time() - t0
         print(f"[viz][spell_correct] Model execution completed in {elapsed:.4f} seconds.", flush=True)
         
         for idx, res_idx in enumerate(non_empty_indices):
             original = lines[res_idx]
-            corrected = batch_results[idx]["generated_text"]
+            corrected = batch_results[idx]
             print(f"  Line {idx+1} result: {original!r} -> {corrected!r}", flush=True)
             lines[res_idx] = corrected
     except Exception as e:
@@ -111,6 +126,7 @@ def spell_correct(raw_text: str) -> str:
     print(f"[viz][spell_correct] Total time elapsed: {time.time() - t_start:.4f} seconds.", flush=True)
     print("-" * 40, flush=True)
     return final_text
+
 
 
 
