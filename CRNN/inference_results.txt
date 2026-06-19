@@ -1,0 +1,201 @@
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_1.jpg	Trhư trnường bộ tà nguyên và mi trường Đàng Miông vố đầu đác vải	0.6777400970458984
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_10.jpg	rong quày ra đó. tho thuậa lạ...	0.6286081075668335
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_11.jpg	chưa kế đế doauh nghiệp và ngườ dán" nái chay ng " vớt nhau nhi	0.6372209191322327
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_12.jpg	vôy, quyưc củc cơ quan quah lý nhà nước sề mất đi " Tưi cũng có ngy	0.6749326586723328
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_13.jpg	nghi nhưc tông chí bở tược qu tinh này đh thư ti cuờng agt lưo chưng	0.6325644850730896
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_14.jpg	ta thc hiện hác c) chế cvdà Nhà nước Thưc hi ện thu hộ đất nhu cách	0.7044733166694641
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_15.jpg	lu nong, vưà khg ề. khi ch nha đầu hị tron thuci vh ngườic si chng	0.6388577818870544
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_16.jpg	tếi thi phườ tạp ông Tri nh ciến Điình,phi giaun đốc si Ta	0.6337047815322876
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_17.jpg	nguyh - một trưống và chà đất thà nấ., lin tang	0.6457191109657288
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_18.jpg	Bưo vế lip trường của có quan 2oau tháo, h trường Đông tìng vó khng đhnh	0.7143577933311462
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_19.jpg	nhường hập nhà đầu tựcó nha cầu tháả thuện vớ người đang rộ dyng đết, chông	0.7214676737785339
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_2.jpg	có chế " khuyều khich nhà đâu tị thoa thuan vưới người sá đến để nhu	0.6446573734283447
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_20.jpg	ta cần khuyên kh ch vố N là uước chơng nất cớ gi củ v. ông vộ " hêu gạ ".	0.6685376167297363
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_21.jpg	chững ta côu thoy đối trông quan đưi3 m, kưông nưu để hà thông hành chnh	0.7162598371505737
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_22.jpg	sm vềmình nhều quả bi sm công nhiệu thi rai công nhườu . Bị trườug Mai	0.6697515845298767
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_23.jpg	ti Tric tấp lế., chc nườc đầu đp dang vó chếc tị thác thuệp khi thu lấ	0.6762791872024536
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_24.jpg	đết.	0.6969655752182007
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_25.jpg	Ngay cả trường hập ta không qui đich, người dân và doanh ngập vấu thưh hện	0.7466343641281128
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_26.jpg	cư để này. " Nêu có dưng quyên lực hành chnh nhà nước với mại lhình khên	0.6716054081916809
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_27.jpg	cng, ngườ dàn sề hạn ". ông Tuc nội, chuyệp bở. can. pPhó ciân đốt	0.6313645243644714
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_28.jpg	sộ Tưi guyên - nS truờng trnh đất Hi nội Tinh tin tinh tó ngt tkim	0.6096528768539429
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_29.jpg	gpiện thu bài đết, guo đất phải tn thế hện than tình thên ộng bi lào viến	0.6136031746864319
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_3.jpg	chyân nhưng hoa thuả quya sự lung đất, nhốn g5p vàn bàng quya sợ	0.6823625564575195
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_30.jpg	Ông ca. Thac đi vBno 4i tnh, thonhph đu Tgậi thu lài ga độ	0.5783462524414062
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_31.jpg	thượ thản quy n cớa vốNo cấp qiận, buyên thng vi qu tnh nhí hậ ng,	0.6131837964057922
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_32.jpg	tâng bố suướn liu đica vộn, phị thang bào ch, ông m thi lan nhn	0.6006007790565491
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_33.jpg	khi vản klông tđic lịp kưng ti cới củức thi tục hành chinh	0.585482120513916
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_34.jpg	lập thc Thức trương tôyng tông vó phảu dng. ông bố có quyện cda sng bô,	0.6890506148338318
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_35.jpg	"ôngcán 1ó quy ên của ôy con . luất không cha phập vộng là làm thog ông	0.6493201851844788
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_36.jpg	co. Trường hập nàn làn thany li pham lột , chi cá điển hơn vay cưc 3ng	0.6573513150215149
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_37.jpg	cn " không dưn kêu mà thế..	0.6424645185470581
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_4.jpg	dụng đtết." Nhưng tại hội nghụ hồnm qua ticng nưi hi các sở tàn nguyên	0.6616625189781189
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_5.jpg	và mội hrươg lại đều hành loạ bộic điển khoan này ra chái dư thic.	0.6100869178771973
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_6.jpg	gian tố số tài nguyic và mội ruty Hấn phong chu inh Tuớn che	0.6114434599876404
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_7.jpg	lết thành phở ccng trung ap dung cở chế khoc thuớn " trong mộ tsi	0.6677480936050415
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_8.jpg	tớt tt trương hộp, vấny mà đã gày pháủ vi g Tuo kiâu day chuy à kị	0.6638525128364563
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_9.jpg	manh , anh này nhận tán rộ quay lại đố náả , anh kia thon thuian	0.6425353288650513
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_1.jpg	chingp trình hành đơng thưc hận NNgh quyết trưng vông 3 khêa	0.7312094569206238
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_10.jpg	đài xới ván bà lành đao, quản lý đi tôny ra thom nhưững tên các 3c	0.6495585441589355
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_11.jpg	quan, đải vớ. kiên tiên và tàng cưng tec chân đầu can tó chinc	0.6405831575393677
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_12.jpg	vo só đờng Tưp tục tôi mội và nông cao công tr cán s tạp hu	0.5831695199012756
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_13.jpg	tản mn phaưng cha lành, đuo củn cấp cy điểng dhc đưng chân	0.6319634914398193
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_14.jpg	duưcngi manh về ci s.	0.5353087782859802
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_15.jpg	V cản cáh hành chính . TPptrung chân chnh manh hơn nia tị cươngi	0.6485450267791748
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_16.jpg	lị luớt trng ti mày tành chính, ràng các trnhi hển trìch nhim và	0.6479225158691406
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_17.jpg	t tha hịp lhất ca có có, nhất là tiên lih vác nhân đểt, đàiu ớh	0.608730673789978
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_18.jpg	lình doanhi, đrất tếi ấn dơng và giời quyết thiếc nch, tế cáơ	0.6221598386764526
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_19.jpg	scấyg đưng hoàn dhi n hi dhốny các quy trinh thi tục hánh chính	0.6665030717849731
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_2.jpg	ti của tơng bộ TP tHon Về xôy đưng Đông, tấp tục chi dao mành	0.6524744629859924
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_20.jpg	x ty ờ đần chưnh sị nộy hành chnh các cấn nhanh ng	0.6028136014938354
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_21.jpg	nhác phuc tình trang quan hm đào quyiêng kưch dch.	0.6584170460700989
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_22.jpg	xày dáhạp vnphất trên đờn ngiề có cc có chit lưông, chuyên mộn	0.6308945417404175
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_23.jpg	toi có phâm chấớ, đạo đic kảm tra xi l, biên quyớt các vụ	0.6423083543777466
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_24.jpg	tham những, lànyg phi, làm thất thác tái vớn nha niệc. và hanh	0.6089618802070618
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_25.jpg	th. Tạp tung mội mộ hi nhâmn chan gi can xuảh hanh doanh	0.6482151746749878
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_26.jpg	thảa tố tộ trng tiưng cộp tàn địp bên p dạt hưc nn	0.5717069506645203
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_27.jpg	Đ0a vitếiu lhệ ộhi đog khnt sin nhanh cáứ nganh khchng	0.5546745657920837
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_28.jpg	lải cần thuc cái ngành công nghiệp.	0.7190467715263367
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_29.jpg	Tấp trc nhân mnạy cát mên hình thuy đông vimn đầu tới vp trưng kh	0.6456774473190308
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_3.jpg	mộ, có hin quờ cước vàn đờng xày dưng chình đên tàng đhio tình	0.6988924145698547
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_30.jpg	chá các ngun vit cho ngần sách Tng, sết quả trinh có phến há	0.7430857419967651
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_31.jpg	đoaho nghiệp nhà nưc và vtc số chưa vp rấp li danh nghịp chi	0.6813641786575317
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_32.jpg	mưc. Trn khai quyết đnh, can t vi mội c chính sánh sauđể	0.6406956911087036
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_33.jpg	lài mn vó đị cn vivi ti t mớc g àn. aà nhi lu cháng	0.5362479090690613
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_34.jpg	trinh hộ nhiệp hình th nia ti về vn hác, đi bin đấy nạuc	0.5542937517166138
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_35.jpg	t làn át, nhát ến vác tộn hịg tđộc, sic in đhim tà gân	0.506095290184021
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_36.jpg	Nành cho gia ducc đào tao.	0.6284219026565552
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_37.jpg	Nàng, rao nông lài quân ly nhà nước trên các kih vớc knh danh	0.6608338356018066
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_38.jpg	dưho mu văn hoi, dhimn phuc nhông vi bớ tia h trong quơng	0.6129273772239685
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_39.jpg	va hạyt đông vàn háái Tip tuc tập tung ngun la cho chưng	0.702263355255127
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_4.jpg	diệm nghi quyết trang xơng cc làn só tro ti tip tực thưc hên vớc	0.5857160091400146
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_40.jpg	taunh ở giam.	0.6616132259368896
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_5.jpg	bi khai nhưc đi vacob vàn nàt tưh noanh cần cản bc cng chún	0.5913522243499756
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_6.jpg	tângp ưng đhanhn tiìm tra nhinn vi củ đảu huiu v tam đư n	0.5566743612289429
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_7.jpg	trong lình vh đất đài và cáơ công trinh Đnyg tưển..	0.6716660261154175
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_8.jpg	tế lụ nghiênV mìnhi đhao phập lướt và hị lượt của đàng nhưng, người	0.6640335917472839
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_9.jpg	có hành si sái trác và nhng nguời bạo ch. thện hin tột ci quy đinh	0.7064989805221558
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_1.jpg	thưng trình kành đôny tic hư ngi mết trung ông 3. ch x ciu sông "	0.5901095867156982
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_10.jpg	trường cưông củc chư đết củu tở chức có sở đấng Trập tu đã một vó nông	0.5522279143333435
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_11.jpg	cao ông kớ cáh sộ. Tấ trc đã mộới phug kủc lài đạo các cấp ng	0.5755173563957214
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_12.jpg	Bang thuo phưông chán hường ngnh và cós.	0.6663964986801147
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_13.jpg	về cái cánh hành chah Tộp trng chến chưu màn hôn ới bi công bị lin tong	0.6594592928886414
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_14.jpg	bà mày tàn chớ, nàny cao trnc thàn trách hên và " tiưc n, liột cacóc	0.5971765518188477
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_15.jpg	nhái là tên lài vớc nà đấi, đầu ti, co doanh, đrện ti nông dưng v	0.6293375492095947
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_16.jpg	giấh qyế kinu nán, ti cáó xy dông hàn tiên lạ toy củ gg trếi	0.5915192365646362
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_17.jpg	ti tục hính dich tiện qyế chến chn bi may han chnc các cy	0.5988173484802246
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_18.jpg	nháuh chông thảo piuc tr trạng qan lài, củu quờ, hảh dáh	0.6306195259094238
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_19.jpg	xày dững và phái trên đi ngà cB ce có chất hường chyên mộn c0, c0óphâm	0.7042317986488342
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_2.jpg	Tưệu về ny đng tông . tếp tra ch đeo muh nớ, cá kihc qui cá sàn đrng ng	0.5831891298294067
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_20.jpg	chá, đạp đườ. kim ta, xủ lý kiên quờt cc vộ than nhôny, làng thú	0.6486814022064209
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_21.jpg	kâ thấi thh tàn sản chà nưới". Và bns tối tập trung mộ nở lủc	0.6137462258338928
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_22.jpg	nhâm thao gở sán xuát binc dah, đưa tôc đa tông trường gDp tiếi đia	0.651350736618042
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_23.jpg	bàn Tộ đã 122 nàm 2004 và trên 123 năm c2005 phứi trển nhang	0.6719090342521667
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_24.jpg	các ngàni dch vụ tấi cáu túc các ngành công ngiệp.	0.6990953683853149
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_25.jpg	Tiếp tụ nhân rông các mộ hin hụy đng vốn đầi ti Tạp trng khái tho	0.7159724831581116
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_26.jpg	các ngườn vốh cho ngàn sánh. Tông sếi qua trni ếi phến boa ang	0.6859714388847351
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_27.jpg	nghiệp thà nướ và vấc tộ đưh, sp sấp lại conh nghập NVà nướ	0.7016894817352295
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_28.jpg	Triến thái qyết sđtnh của TP vố mội số dic sách lu đết đãt và	0.6220602989196777
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_29.jpg	các đã cn có vàn đầu tư nước ngoàn. hà sáớt li cá chưng	0.6718801259994507
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_3.jpg	đny chíh th tông treotnh tôo gh nyết nrng vôny 6 iệ c1ự thuo đi tpô	0.5626474022865295
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_30.jpg	trìng hôi nhập tinh tộ cuớ TP về váo háợ c xà kớ, đấy mộới x	0.6264275908470154
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_31.jpg	kội kả, phúi mên xà hà hạp tấp , ka ếền đầi th ngàn sách	0.5870359539985657
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_32.jpg	cho gio dục.. đân tạ.	0.6451245546340942
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_33.jpg	Nàng cao nông lực quản lý nhà nưt tà cá h vc bini dac dch vu	0.6816248297691345
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_34.jpg	vài hii , khấi phuc những só hó , tiệ vủệ tang quáh lý vì tut đng	0.6226204037666321
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_35.jpg	vàn hoc điếp tục tip trung ngin li cho đrưông trng 3 giườn "	0.6406980752944946
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_4.jpg	tc him vộ v ba va đi àa v có sơn nớt snh sach cai ci a ôy	0.5693692564964294
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_5.jpg	mi, tông cáng thánh him tha nhưững nài ci ộc hậu u pham, h vậi	0.5954165458679199
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_6.jpg	dnong lit vc đất đi và các công tinh thông điển.	0.7109934687614441
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_7.jpg	xu lý nghiêm mình tho phập luê và ly lật của làng nhưng người có hin.	0.6810829043388367
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_8.jpg	vi sa trái và những ngưiu bao che. Trưựp hiện tời cáó py đn đố ki cn bộ lài	0.641504168510437
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_9.jpg	đao, quớn ly đã xấy ra thon những, têu c ở có qua, đm vi, tiện tạầi ch	0.6660615801811218
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_1.jpg	Viề tiệp về vụ cnn Trưng xhnh Đoại i ti hi bao cg phi m	0.5273954272270203
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_10.jpg	tài gham cun vng nnh cđran hên lông t5 màng hàn luun dy, nhng ny	0.6018871068954468
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_11.jpg	mấi luệt tiệt bn chng vi à tếi đp đã mmng côn bao li bàn gnhàngphoc	0.5893011689186096
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_12.jpg	chonguan tông ra., n hung nguau ma tho là và cng xng 2ày va danh	0.6179679036140442
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_13.jpg	bn hyp s.	0.6672999262809753
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_14.jpg	Thế nhung nhuông hiyp sề cy gui hi ao Nguêa đi b, thông,p hi bội, li nhi	0.6019909381866455
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_15.jpg	"ờ hó, bi tể ny mi pn ca chong đo ch đ lucm ve choui,g hú t, ti tông	0.5389308333396912
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_16.jpg	phững côn tết tạm ởị ôn qua gng ngã v ộ hrung thờ đng lài ghư dan	0.5238085389137268
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_17.jpg	tnhnh khi tôoi bn khng bôn bgun ny đói b dấy thông đy mng vi m,.	0.5769743919372559
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_18.jpg	dông cng mày mà mnh Da đi không ban, đó chết là rện am củ va	0.6228258013725281
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_19.jpg	bà khang đinh đ nh mà nư ông nghiyp nguàn hàn bn tôny m	0.6373652815818787
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_2.jpg	nhưng ngườt nảh lến Dc thậy ptha, hành, nhiến lạn đãc đi bng tộ na chi sế,	0.6493837237358093
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_20.jpg	anh khang đon đã lony vici thi hiocn tưện Tên ci là ghi nả miấn	0.5633274912834167
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_21.jpg	lu nrn , bhi thonh tru đi kác đình puiphom ro khàng à ng mộ đề ngện	0.5573464035987854
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_22.jpg	ling vi g, vi ưny phi hingi cng hit rạộ chym mài hạn	0.5033597350120544
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_23.jpg	có thái tinh uny vng tinh đicn àn kh, t5 đin nhườn phại vn hon đny cu.	0.5880677700042725
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_24.jpg	cai nhợ lic tà tạy chu đi hn sà Thim v ti lưng ki phi p,	0.49695342779159546
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_25.jpg	pài vt đực o đi ng mưin, cấp thưchan c haưh gạ thn phà	0.5399299263954163
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_26.jpg	lon xàn đi mớ tuc, ìc Hi mộ lhch phế hng khong an vny	0.5473607778549194
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_27.jpg	địy nghn vớ vuế, mới đi ha nưiu c hết ba xấi vư cn thinmanc u	0.5253770351409912
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_28.jpg	cun v guờ ta đông c đông bo hy bàng	0.5810717344284058
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_29.jpg	chung ta c hom n hinh vì hạicn dhong shôn, xec là tàt ruo vny cha	0.5619980692863464
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_3.jpg	ng ti cnh Tường tuon bại "hộ bon đc k thon b P tưn gih tông nh rng	0.543992280960083
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_30.jpg	xông dhững tông vái th n, log phài mnh tang hàm can bông bich din	0.5720619559288025
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_31.jpg	ln vông A5 ", nhng thà là kh ng co lic Thúi hon nghinh và bu	0.6522769331932068
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_32.jpg	làng khiển thị hâm vát anh Đạn vàn khung dng nghyp kiau lg hgny	0.5689714550971985
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_33.jpg	thưn, rài phmm dài c mi muêa vài có hàn glạp hiện kiện bhiến g hc	0.5315514206886292
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_34.jpg	sching rài lm . t,. c nhi vày mườn lim vàn cẽ qha bro c khn gih	0.5236917734146118
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_35.jpg	vả ngưc dà rì hang ôn phi t, aưi chị cà ma s miệ	0.5417394042015076
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_36.jpg	phái l nạ soi ch gện tàny hông kh am bàng nhàn chn can g gmn	0.5176385641098022
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_37.jpg	20 nguờ vàng mà hàn khu nay chà brng hạ t hi chi bom mnh Du vàn bớ	0.6213533282279968
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_38.jpg	tgưới tthc. nhân pháh, boác gông tri họ bi độ, gi đian mà nài cyg	0.5310232639312744
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_39.jpg	nhu ln chah lng bìhi ghá l, dà ca khai vu dha s hài đi sà ga bả	0.5796012878417969
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_4.jpg	tuản D. 150đờng, mà gán làn nhong, Ti binh gmn hng 10 00nh,	0.4961777627468109
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_40.jpg	v" cnh bh, kớết nghếp, li váo cánh đhi làn há nhi nhi tro vi rot,	0.5173391103744507
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_41.jpg	để bn đim điế ôn sêmn lôn qua, chác hàn tà hàng tim , n guà li	0.5723546147346497
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_42.jpg	cn hà h bhi đân gu h, bạn, đn bị k gmi tông bạn đế đt lạn m, cka,	0.5285131335258484
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_43.jpg	châ, ngân vgin.	0.5929578542709351
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_44.jpg	và ham vy , chung t ang ô hải vàn háiung và chinh mì kh	0.6319095492362976
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_5.jpg	mnh thnh sracn tên Hái đền gui 200 c00đ. Sanấ" ruà h ạ,.	0.5637115836143494
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_6.jpg	nhimn lạm đác qọiđền bàng bị bị chngở, cng hô.	0.6303784251213074
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_7.jpg	Bon liện tạp bao muến vư cang quyt đrảt qua tôg nhom sng chân	0.5995838046073914
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_8.jpg	đi ti à tin auc ở đrong huni vng A 5. "0 điam đông tông đi hgiên dận	0.5358948707580566
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_9.jpg	đ củớc cho nàền tìn, aua bác ch, ban t mn bi đi luit cẽ nế ti v00 đhiệg	0.6039654016494751
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_1.jpg	Kấi Quất Về biềnN Đđo việT Nấm.	0.5462177395820618
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_10.jpg	gần và xa b, hộp thình phông tuyệm bàan vớ, hiếêm sất và lên chữ	0.6588985919952393
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_11.jpg	mng biện.	0.5703018307685852
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_12.jpg	ci ni tì chinh liợ giua trong nã ến c hi bình đơng vi th tở đườnyg.	0.5673211216926575
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_13.jpg	chậu t với chiutu, châ v0 với cngy tônyg giuo bn guic tế thun	0.5855417847633362
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_14.jpg	li, phát triến ngành biên.	0.6438202261924744
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_15.jpg	có khí hâu biến là vùng nhiở độ tạa tin liện cho cnh vột biên phái	0.6298862099647522
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_16.jpg	tiến, tôn tại t.	0.5966789722442627
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_17.jpg	Cótài nguyệm ìnhvđt và khang cần phông phi đa dang, gy hiển.	0.7002867460250854
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_18.jpg	vùng hiện và ha đảo nưc tàcó i thì hiế l c hảt cưở t ko, có cn khương	0.6039813160896301
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_19.jpg	trưo tiệp thên ti nghậphảo nộ vên thc lp dên tio vàng đing chng hin	0.6227945685386658
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_2.jpg	Nưc tr giệp với biến bông ở hái phác tông vi Nomu Vông biện. ViếtnNam	0.6628464460372925
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_20.jpg	xà ht, có làn quan tưc tếệp đến ci phôn vạnh của đã mưệc, đân, vên	0.6531335115432739
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_21.jpg	nunh và hanho gphú của nhân dan.	0.6658850312232971
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_3.jpg	tà mấ phân biệên vồng.	0.6672408580780029
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_4.jpg	Bộ biền dài 3 2Bo kn, tà Quàng Ninh đếh kền ging Nhưvng đớ 10 kớ	0.5895851850509644
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_5.jpg	ti có 1 kn bà biến (trng in cu thungã là s hit đt bin tha bở biền	0.598357081413269
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_6.jpg	Biến có vông ni thnyg, làn khi vông điế quy n kành tế và hin lucnip vi	0.6039972901344299
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_7.jpg	bên tinh trên triệuo don kgấp ở điện tiấh đất đn . Hriế thi,	0.5494612455368042
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_8.jpg	Bớ0000h.	0.42288655042648315
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_9.jpg	Trng đi ca d quản đa tràng sa, c nường su và c5t tchic đấi, nhở,	0.5953248739242554
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_1.jpg	Bái Chết Cưân Thành cến.	0.5672253966331482
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_10.jpg	mt đnchny nhưng chi mim cha m đn cán hi h bi n hông hi hệm	0.5519524216651917
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_11.jpg	ny trun rư tưng lp nh hn s tntng ha ty n th t nđ tcngê	0.42927268147468567
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_12.jpg	tời n gn gh th c dung vn gui ng pờn huủ tiờ g gư g ci	0.4643450975418091
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_13.jpg	m.	0.6528268456459045
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_14.jpg	Trnh ông cn là nến đất ột ệu bc b t tếi c hin hinghaogi đt athin thưng	0.4790383577346802
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_15.jpg	tye Tưi đi cấu đã uớ sh m tn trn àn hộ ng đái su ba đ sc sớ bgện cảu	0.4986906051635742
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_16.jpg	là tộ thành cầu thú bị b trong một đệ bông nhi r chi bo giờ đưc hut tưc n ao	0.6031849384307861
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_17.jpg	nhưng đư đng phá bi thết bạu Tuư li, thìnhưng đi n hm kưici cicm ch, vi bao	0.6044243574142456
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_18.jpg	nghi lệ vộ quyất sâm, đi nhiệ tảng hoàn cánh đitao đốt ác nộ t ngny tha lể	0.5673097372055054
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_19.jpg	Thành công ấy, lấu có mày người đất đườa s.	0.6498371958732605
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_2.jpg	cế hao giờ ban ti tớt thành cng bài g mn bạo hì ki cđun đi mnh theo đếi , phái dhông	0.5735535025596619
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_20.jpg	sau nộ mưền thi đại bic, có bao đ tị biến àu khi bit màt tất thàn stôi tại bay đồm.	0.6125357747077942
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_21.jpg	To thết đy . Nhưng sao mà làn gi kh Nưc sy tó hui hấy phôy ần ti thật n không phá	0.5732986330986023
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_22.jpg	là thưết bại, chi bà khi thành công bị tì hàn mà tới cực vày vànchà đh bo nhi	0.6247804760932922
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_23.jpg	Nượ. Nượ buoantrng bi bc đi vi ểu bớt nh đì hơng tưh n đà sny ghi v ng uyin	0.5138713717460632
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_24.jpg	ca các ký thự, và cũng là hát nhất củc trình công..	0.6604980230331421
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_3.jpg	đó là kết qut hàn háo trng ng việc, sựi chưh sềc đần từng ch tiết l tày đó bà cách nội	0.6917304992675781
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_4.jpg	thác cua tà thành điế, nghia là có đước củ mng gài ng, đớể ộ gin rà phụcp	0.6083385944366455
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_5.jpg	Vyy th han hấy dành chướ th gian đã bông ninh ny ngàm..	0.6379822492599487
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_6.jpg	sia ng sà ch cho lạn v những gin thình đạt đi thìn ấy hunộtcn g n lển c	0.5826238989830017
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_7.jpg	cề.	0.40309110283851624
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_8.jpg	Trành công 1ới kh bố và con trui v đông khó bưc vào lạp, nàtnhững non ên me thíchnhân	0.631273627281189
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_9.jpg	tpi lạộ nh cnh c tà nh n mi ci hịg ệp ư ư i đi m ti u ngi ng	0.47125232219696045

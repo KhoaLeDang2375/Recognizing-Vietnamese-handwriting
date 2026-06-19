@@ -1,0 +1,4 @@
+# Ignore model checkpoints
+best_accuracy/
+logs/
+inference_results.txt

@@ -1,6 +1,5 @@
 # Model Directories and Checkpoints
-/CRNN/
-/SVTR/
+
 *.pdparams
 *.pdopt
 *.states

@@ -1,0 +1,205 @@
+[2026/04/21 09:35:39] ppocr INFO: Architecture : 
+[2026/04/21 09:35:39] ppocr INFO:     Backbone : 
+[2026/04/21 09:35:39] ppocr INFO:         layers : 34
+[2026/04/21 09:35:39] ppocr INFO:         name : ResNet
+[2026/04/21 09:35:39] ppocr INFO:     Head : 
+[2026/04/21 09:35:39] ppocr INFO:         fc_decay : 0
+[2026/04/21 09:35:39] ppocr INFO:         name : CTCHead
+[2026/04/21 09:35:39] ppocr INFO:     Neck : 
+[2026/04/21 09:35:39] ppocr INFO:         encoder_type : rnn
+[2026/04/21 09:35:39] ppocr INFO:         hidden_size : 256
+[2026/04/21 09:35:39] ppocr INFO:         name : SequenceEncoder
+[2026/04/21 09:35:39] ppocr INFO:     Transform : None
+[2026/04/21 09:35:39] ppocr INFO:     algorithm : CRNN
+[2026/04/21 09:35:39] ppocr INFO:     model_type : rec
+[2026/04/21 09:35:39] ppocr INFO: Eval : 
+[2026/04/21 09:35:39] ppocr INFO:     dataset : 
+[2026/04/21 09:35:39] ppocr INFO:         data_dir : /kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/train_data
+[2026/04/21 09:35:39] ppocr INFO:         label_file_list : ['/kaggle/working/exp_crnn_uit_hwdb/data/rec_gt_val_split.txt']
+[2026/04/21 09:35:39] ppocr INFO:         name : SimpleDataSet
+[2026/04/21 09:35:39] ppocr INFO:         transforms : 
+[2026/04/21 09:35:39] ppocr INFO:             DecodeImage : 
+[2026/04/21 09:35:39] ppocr INFO:                 channel_first : False
+[2026/04/21 09:35:39] ppocr INFO:                 img_mode : BGR
+[2026/04/21 09:35:39] ppocr INFO:             CTCLabelEncode : None
+[2026/04/21 09:35:39] ppocr INFO:             RecResizeImg : 
+[2026/04/21 09:35:39] ppocr INFO:                 image_shape : [3, 32, 640]
+[2026/04/21 09:35:39] ppocr INFO:             KeepKeys : 
+[2026/04/21 09:35:39] ppocr INFO:                 keep_keys : ['image', 'label', 'length']
+[2026/04/21 09:35:39] ppocr INFO:     loader : 
+[2026/04/21 09:35:39] ppocr INFO:         batch_size_per_card : 128
+[2026/04/21 09:35:39] ppocr INFO:         drop_last : False
+[2026/04/21 09:35:39] ppocr INFO:         num_workers : 4
+[2026/04/21 09:35:39] ppocr INFO:         shuffle : False
+[2026/04/21 09:35:39] ppocr INFO:         use_shared_memory : True
+[2026/04/21 09:35:39] ppocr INFO: Global : 
+[2026/04/21 09:35:39] ppocr INFO:     cal_metric_during_train : True
+[2026/04/21 09:35:39] ppocr INFO:     character_dict_path : /kaggle/working/exp_crnn_uit_hwdb/data/dict_vietnamese.txt
+[2026/04/21 09:35:39] ppocr INFO:     distributed : True
+[2026/04/21 09:35:39] ppocr INFO:     epoch_num : 30
+[2026/04/21 09:35:39] ppocr INFO:     eval_batch_step : [0, 500]
+[2026/04/21 09:35:39] ppocr INFO:     freeze_backbone : True
+[2026/04/21 09:35:39] ppocr INFO:     infer_mode : False
+[2026/04/21 09:35:39] ppocr INFO:     log_smooth_window : 20
+[2026/04/21 09:35:39] ppocr INFO:     max_text_length : 100
+[2026/04/21 09:35:39] ppocr INFO:     pretrained_model : /kaggle/working/exp_crnn_uit_hwdb/pretrained/rec_r34_vd_none_bilstm_ctc_v2.0_train/best_accuracy
+[2026/04/21 09:35:39] ppocr INFO:     print_batch_step : 20
+[2026/04/21 09:35:39] ppocr INFO:     save_epoch_step : 5
+[2026/04/21 09:35:39] ppocr INFO:     save_model_dir : /kaggle/working/exp_crnn_uit_hwdb/stage1
+[2026/04/21 09:35:39] ppocr INFO:     save_res_path : /kaggle/working/exp_crnn_uit_hwdb/predicts.txt
+[2026/04/21 09:35:39] ppocr INFO:     seed : 2026
+[2026/04/21 09:35:39] ppocr INFO:     use_gpu : True
+[2026/04/21 09:35:39] ppocr INFO:     use_space_char : True
+[2026/04/21 09:35:39] ppocr INFO: Loss : 
+[2026/04/21 09:35:39] ppocr INFO:     name : CTCLoss
+[2026/04/21 09:35:39] ppocr INFO: Metric : 
+[2026/04/21 09:35:39] ppocr INFO:     main_indicator : acc
+[2026/04/21 09:35:39] ppocr INFO:     name : RecMetric
+[2026/04/21 09:35:39] ppocr INFO: Optimizer : 
+[2026/04/21 09:35:39] ppocr INFO:     beta1 : 0.9
+[2026/04/21 09:35:39] ppocr INFO:     beta2 : 0.999
+[2026/04/21 09:35:39] ppocr INFO:     lr : 
+[2026/04/21 09:35:39] ppocr INFO:         learning_rate : 0.0005
+[2026/04/21 09:35:39] ppocr INFO:         name : Cosine
+[2026/04/21 09:35:39] ppocr INFO:         warmup_epoch : 2
+[2026/04/21 09:35:39] ppocr INFO:     name : Adam
+[2026/04/21 09:35:39] ppocr INFO:     regularizer : 
+[2026/04/21 09:35:39] ppocr INFO:         factor : 0.0001
+[2026/04/21 09:35:39] ppocr INFO:         name : L2
+[2026/04/21 09:35:39] ppocr INFO: PostProcess : 
+[2026/04/21 09:35:39] ppocr INFO:     name : CTCLabelDecode
+[2026/04/21 09:35:39] ppocr INFO: Train : 
+[2026/04/21 09:35:39] ppocr INFO:     dataset : 
+[2026/04/21 09:35:39] ppocr INFO:         data_dir : /kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/train_data
+[2026/04/21 09:35:39] ppocr INFO:         label_file_list : ['/kaggle/working/exp_crnn_uit_hwdb/data/rec_gt_train_split.txt']
+[2026/04/21 09:35:39] ppocr INFO:         name : SimpleDataSet
+[2026/04/21 09:35:39] ppocr INFO:         transforms : 
+[2026/04/21 09:35:39] ppocr INFO:             DecodeImage : 
+[2026/04/21 09:35:39] ppocr INFO:                 channel_first : False
+[2026/04/21 09:35:39] ppocr INFO:                 img_mode : BGR
+[2026/04/21 09:35:39] ppocr INFO:             HandwritingAug : 
+[2026/04/21 09:35:39] ppocr INFO:                 aug_prob : 0.8
+[2026/04/21 09:35:39] ppocr INFO:             CTCLabelEncode : None
+[2026/04/21 09:35:39] ppocr INFO:             RecResizeImg : 
+[2026/04/21 09:35:39] ppocr INFO:                 image_shape : [3, 32, 640]
+[2026/04/21 09:35:39] ppocr INFO:             KeepKeys : 
+[2026/04/21 09:35:39] ppocr INFO:                 keep_keys : ['image', 'label', 'length']
+[2026/04/21 09:35:39] ppocr INFO:     loader : 
+[2026/04/21 09:35:39] ppocr INFO:         batch_size_per_card : 128
+[2026/04/21 09:35:39] ppocr INFO:         drop_last : True
+[2026/04/21 09:35:39] ppocr INFO:         num_workers : 4
+[2026/04/21 09:35:39] ppocr INFO:         shuffle : True
+[2026/04/21 09:35:39] ppocr INFO:         use_shared_memory : True
+[2026/04/21 09:35:39] ppocr INFO: profiler_options : None
+[2026/04/21 09:35:39] ppocr INFO: train with paddle 3.0.0 and device Place(gpu:0)
+[2026/04/21 09:35:43] ppocr INFO: Initialize indexes of datasets:['/kaggle/working/exp_crnn_uit_hwdb/data/rec_gt_train_split.txt']
+[2026/04/21 09:35:43] ppocr INFO: Initialize indexes of datasets:['/kaggle/working/exp_crnn_uit_hwdb/data/rec_gt_val_split.txt']
+[2026/04/21 09:35:43] ppocr INFO:  ĐÓNG BĂNG BACKBONE VÀ NECK (STAGE 1)...
+[2026/04/21 09:35:43] ppocr INFO:  Done freezing.
+[2026/04/21 09:35:43] ppocr INFO:  Trainable Parameters: 3,237,539 / 24,562,947 (13.18%)
+[2026/04/21 09:35:43] ppocr INFO: train dataloader has 24 iters
+[2026/04/21 09:35:43] ppocr INFO: valid dataloader has 6 iters
+[2026/04/21 09:35:44] ppocr WARNING: The shape of model params head.fc.bias [163] not matched with loaded params head.fc.bias [37] !
+[2026/04/21 09:35:44] ppocr WARNING: The shape of model params head.fc.weight [512, 163] not matched with loaded params head.fc.weight [512, 37] !
+[2026/04/21 09:35:44] ppocr INFO: load pretrain successful from /kaggle/working/exp_crnn_uit_hwdb/pretrained/rec_r34_vd_none_bilstm_ctc_v2.0_train/best_accuracy
+[2026/04/21 09:35:45] ppocr INFO: During the training process, after the 0th iteration, an evaluation is run every 500 iterations
+[2026/04/21 09:36:21] ppocr INFO: epoch: [1/30], global_step: 20, lr: 0.000099, acc: 0.000000, norm_edit_dis: 0.037988, loss: 654.298309, avg_reader_cost: 0.25961 s, avg_batch_cost: 1.84567 s, avg_samples: 128.0, ips: 69.35138 samples/s, eta: 0:21:31, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:36:27] ppocr INFO: epoch: [1/30], global_step: 24, lr: 0.000141, acc: 0.000000, norm_edit_dis: 0.047029, loss: 634.851288, avg_reader_cost: 0.00073 s, avg_batch_cost: 0.27785 s, avg_samples: 25.6, ips: 92.13464 samples/s, eta: 0:20:31, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:36:28] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:36:57] ppocr INFO: epoch: [2/30], global_step: 40, lr: 0.000307, acc: 0.000000, norm_edit_dis: 0.000785, loss: 458.226852, avg_reader_cost: 0.25986 s, avg_batch_cost: 1.49988 s, avg_samples: 102.4, ips: 68.27224 samples/s, eta: 0:20:31, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:37:09] ppocr INFO: epoch: [2/30], global_step: 48, lr: 0.000391, acc: 0.000000, norm_edit_dis: 0.000000, loss: 288.963577, avg_reader_cost: 0.00096 s, avg_batch_cost: 0.59251 s, avg_samples: 51.2, ips: 86.41154 samples/s, eta: 0:19:40, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:37:10] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:37:35] ppocr INFO: epoch: [3/30], global_step: 60, lr: 0.000500, acc: 0.000000, norm_edit_dis: 0.000000, loss: 257.456696, avg_reader_cost: 0.30358 s, avg_batch_cost: 1.29659 s, avg_samples: 76.8, ips: 59.23246 samples/s, eta: 0:20:12, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:37:55] ppocr INFO: epoch: [3/30], global_step: 72, lr: 0.000500, acc: 0.000000, norm_edit_dis: 0.000000, loss: 250.969009, avg_reader_cost: 0.00089 s, avg_batch_cost: 1.00815 s, avg_samples: 76.8, ips: 76.17948 samples/s, eta: 0:19:33, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:37:56] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:38:15] ppocr INFO: epoch: [4/30], global_step: 80, lr: 0.000499, acc: 0.000000, norm_edit_dis: 0.000000, loss: 247.160324, avg_reader_cost: 0.30199 s, avg_batch_cost: 0.98366 s, avg_samples: 51.2, ips: 52.05055 samples/s, eta: 0:20:00, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:38:41] ppocr INFO: epoch: [4/30], global_step: 96, lr: 0.000497, acc: 0.000000, norm_edit_dis: 0.000000, loss: 244.162773, avg_reader_cost: 0.00184 s, avg_batch_cost: 1.29927 s, avg_samples: 102.4, ips: 78.81324 samples/s, eta: 0:19:04, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:38:41] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:38:53] ppocr INFO: epoch: [5/30], global_step: 100, lr: 0.000496, acc: 0.000000, norm_edit_dis: 0.000000, loss: 244.162773, avg_reader_cost: 0.28702 s, avg_batch_cost: 0.60873 s, avg_samples: 25.6, ips: 42.05486 samples/s, eta: 0:19:27, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:39:26] ppocr INFO: epoch: [5/30], global_step: 120, lr: 0.000491, acc: 0.000000, norm_edit_dis: 0.000141, loss: 243.357719, avg_reader_cost: 0.00288 s, avg_batch_cost: 1.64407 s, avg_samples: 128.0, ips: 77.85575 samples/s, eta: 0:18:25, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:39:26] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:39:27] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/iter_epoch_5
+[2026/04/21 09:40:06] ppocr INFO: epoch: [6/30], global_step: 140, lr: 0.000484, acc: 0.000000, norm_edit_dis: 0.003293, loss: 239.891365, avg_reader_cost: 0.34029 s, avg_batch_cost: 1.99472 s, avg_samples: 128.0, ips: 64.16938 samples/s, eta: 0:18:01, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:40:12] ppocr INFO: epoch: [6/30], global_step: 144, lr: 0.000483, acc: 0.000000, norm_edit_dis: 0.004409, loss: 243.464584, avg_reader_cost: 0.00030 s, avg_batch_cost: 0.32237 s, avg_samples: 25.6, ips: 79.41279 samples/s, eta: 0:17:49, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:40:13] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:40:45] ppocr INFO: epoch: [7/30], global_step: 160, lr: 0.000476, acc: 0.000000, norm_edit_dis: 0.010732, loss: 244.260193, avg_reader_cost: 0.32989 s, avg_batch_cost: 1.64726 s, avg_samples: 102.4, ips: 62.16369 samples/s, eta: 0:17:31, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:40:58] ppocr INFO: epoch: [7/30], global_step: 168, lr: 0.000472, acc: 0.000000, norm_edit_dis: 0.010732, loss: 242.193329, avg_reader_cost: 0.00055 s, avg_batch_cost: 0.64579 s, avg_samples: 51.2, ips: 79.28279 samples/s, eta: 0:17:09, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:40:59] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:41:24] ppocr INFO: epoch: [8/30], global_step: 180, lr: 0.000466, acc: 0.000000, norm_edit_dis: 0.011662, loss: 241.285461, avg_reader_cost: 0.30985 s, avg_batch_cost: 1.30609 s, avg_samples: 76.8, ips: 58.80140 samples/s, eta: 0:16:58, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:41:44] ppocr INFO: epoch: [8/30], global_step: 192, lr: 0.000459, acc: 0.000000, norm_edit_dis: 0.012042, loss: 239.835526, avg_reader_cost: 0.00131 s, avg_batch_cost: 0.97511 s, avg_samples: 76.8, ips: 78.76037 samples/s, eta: 0:16:27, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:41:44] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:42:03] ppocr INFO: epoch: [9/30], global_step: 200, lr: 0.000454, acc: 0.000000, norm_edit_dis: 0.012042, loss: 239.490158, avg_reader_cost: 0.30761 s, avg_batch_cost: 0.98042 s, avg_samples: 51.2, ips: 52.22247 samples/s, eta: 0:16:24, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:42:29] ppocr INFO: epoch: [9/30], global_step: 216, lr: 0.000443, acc: 0.000000, norm_edit_dis: 0.010594, loss: 239.643967, avg_reader_cost: 0.00131 s, avg_batch_cost: 1.30285 s, avg_samples: 102.4, ips: 78.59689 samples/s, eta: 0:15:44, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:42:30] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:42:41] ppocr INFO: epoch: [10/30], global_step: 220, lr: 0.000440, acc: 0.000000, norm_edit_dis: 0.011011, loss: 239.254082, avg_reader_cost: 0.26502 s, avg_batch_cost: 0.60312 s, avg_samples: 25.6, ips: 42.44568 samples/s, eta: 0:15:47, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:43:14] ppocr INFO: epoch: [10/30], global_step: 240, lr: 0.000426, acc: 0.000000, norm_edit_dis: 0.012015, loss: 239.954376, avg_reader_cost: 0.00290 s, avg_batch_cost: 1.65376 s, avg_samples: 128.0, ips: 77.39927 samples/s, eta: 0:14:59, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:43:15] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:43:16] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/iter_epoch_10
+[2026/04/21 09:43:54] ppocr INFO: epoch: [11/30], global_step: 260, lr: 0.000409, acc: 0.000000, norm_edit_dis: 0.014866, loss: 234.105812, avg_reader_cost: 0.29365 s, avg_batch_cost: 1.95678 s, avg_samples: 128.0, ips: 65.41375 samples/s, eta: 0:14:24, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:44:00] ppocr INFO: epoch: [11/30], global_step: 264, lr: 0.000406, acc: 0.000000, norm_edit_dis: 0.016716, loss: 233.998756, avg_reader_cost: 0.00029 s, avg_batch_cost: 0.32239 s, avg_samples: 25.6, ips: 79.40576 samples/s, eta: 0:14:15, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:44:01] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:44:32] ppocr INFO: epoch: [12/30], global_step: 280, lr: 0.000392, acc: 0.000000, norm_edit_dis: 0.036639, loss: 228.789963, avg_reader_cost: 0.26146 s, avg_batch_cost: 1.60236 s, avg_samples: 102.4, ips: 63.90590 samples/s, eta: 0:13:48, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:44:45] ppocr INFO: epoch: [12/30], global_step: 288, lr: 0.000385, acc: 0.000000, norm_edit_dis: 0.049826, loss: 226.988586, avg_reader_cost: 0.00053 s, avg_batch_cost: 0.64686 s, avg_samples: 51.2, ips: 79.15186 samples/s, eta: 0:13:30, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:44:46] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:45:11] ppocr INFO: epoch: [13/30], global_step: 300, lr: 0.000374, acc: 0.000000, norm_edit_dis: 0.082685, loss: 223.996803, avg_reader_cost: 0.30143 s, avg_batch_cost: 1.30542 s, avg_samples: 76.8, ips: 58.83160 samples/s, eta: 0:13:13, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:45:31] ppocr INFO: epoch: [13/30], global_step: 312, lr: 0.000362, acc: 0.000000, norm_edit_dis: 0.107001, loss: 218.683167, avg_reader_cost: 0.00092 s, avg_batch_cost: 0.97336 s, avg_samples: 76.8, ips: 78.90184 samples/s, eta: 0:12:46, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:45:31] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:45:49] ppocr INFO: epoch: [14/30], global_step: 320, lr: 0.000354, acc: 0.000000, norm_edit_dis: 0.130644, loss: 214.889542, avg_reader_cost: 0.26174 s, avg_batch_cost: 0.93882 s, avg_samples: 51.2, ips: 54.53651 samples/s, eta: 0:12:35, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:46:16] ppocr INFO: epoch: [14/30], global_step: 336, lr: 0.000338, acc: 0.000000, norm_edit_dis: 0.159202, loss: 205.043777, avg_reader_cost: 0.00184 s, avg_batch_cost: 1.31038 s, avg_samples: 102.4, ips: 78.14513 samples/s, eta: 0:12:01, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:46:16] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:46:28] ppocr INFO: epoch: [15/30], global_step: 340, lr: 0.000334, acc: 0.000000, norm_edit_dis: 0.165549, loss: 202.944321, avg_reader_cost: 0.27200 s, avg_batch_cost: 0.60077 s, avg_samples: 25.6, ips: 42.61177 samples/s, eta: 0:11:58, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:47:01] ppocr INFO: epoch: [15/30], global_step: 360, lr: 0.000313, acc: 0.000000, norm_edit_dis: 0.204846, loss: 193.397400, avg_reader_cost: 0.00268 s, avg_batch_cost: 1.65682 s, avg_samples: 128.0, ips: 77.25633 samples/s, eta: 0:11:16, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:47:01] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:47:02] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/iter_epoch_15
+[2026/04/21 09:47:40] ppocr INFO: epoch: [16/30], global_step: 380, lr: 0.000292, acc: 0.000000, norm_edit_dis: 0.234687, loss: 188.232079, avg_reader_cost: 0.31798 s, avg_batch_cost: 1.97011 s, avg_samples: 128.0, ips: 64.97086 samples/s, eta: 0:10:40, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:47:47] ppocr INFO: epoch: [16/30], global_step: 384, lr: 0.000287, acc: 0.000000, norm_edit_dis: 0.236264, loss: 187.298859, avg_reader_cost: 0.00029 s, avg_batch_cost: 0.32267 s, avg_samples: 25.6, ips: 79.33750 samples/s, eta: 0:10:31, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:47:47] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:48:19] ppocr INFO: epoch: [17/30], global_step: 400, lr: 0.000270, acc: 0.000000, norm_edit_dis: 0.255267, loss: 180.549469, avg_reader_cost: 0.25146 s, avg_batch_cost: 1.62537 s, avg_samples: 102.4, ips: 63.00115 samples/s, eta: 0:10:03, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:48:32] ppocr INFO: epoch: [17/30], global_step: 408, lr: 0.000261, acc: 0.000000, norm_edit_dis: 0.258954, loss: 180.280457, avg_reader_cost: 0.00069 s, avg_batch_cost: 0.64382 s, avg_samples: 51.2, ips: 79.52562 samples/s, eta: 0:09:46, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:48:33] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:48:58] ppocr INFO: epoch: [18/30], global_step: 420, lr: 0.000248, acc: 0.000000, norm_edit_dis: 0.269754, loss: 178.332657, avg_reader_cost: 0.28426 s, avg_batch_cost: 1.28898 s, avg_samples: 76.8, ips: 59.58217 samples/s, eta: 0:09:26, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:49:17] ppocr INFO: epoch: [18/30], global_step: 432, lr: 0.000235, acc: 0.000000, norm_edit_dis: 0.275417, loss: 175.214157, avg_reader_cost: 0.00103 s, avg_batch_cost: 0.97629 s, avg_samples: 76.8, ips: 78.66480 samples/s, eta: 0:09:01, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:49:18] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:49:36] ppocr INFO: epoch: [19/30], global_step: 440, lr: 0.000227, acc: 0.000000, norm_edit_dis: 0.280918, loss: 174.130501, avg_reader_cost: 0.27608 s, avg_batch_cost: 0.94941 s, avg_samples: 51.2, ips: 53.92842 samples/s, eta: 0:08:49, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:50:02] ppocr INFO: epoch: [19/30], global_step: 456, lr: 0.000209, acc: 0.000000, norm_edit_dis: 0.289192, loss: 170.995483, avg_reader_cost: 0.00205 s, avg_batch_cost: 1.30041 s, avg_samples: 102.4, ips: 78.74422 samples/s, eta: 0:08:16, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:50:03] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:50:15] ppocr INFO: epoch: [20/30], global_step: 460, lr: 0.000205, acc: 0.000000, norm_edit_dis: 0.292769, loss: 171.647804, avg_reader_cost: 0.27502 s, avg_batch_cost: 0.61696 s, avg_samples: 25.6, ips: 41.49351 samples/s, eta: 0:08:11, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:50:48] ppocr INFO: epoch: [20/30], global_step: 480, lr: 0.000184, acc: 0.000000, norm_edit_dis: 0.300242, loss: 167.315536, avg_reader_cost: 0.00288 s, avg_batch_cost: 1.65021 s, avg_samples: 128.0, ips: 77.56599 samples/s, eta: 0:07:31, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:50:48] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:50:49] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/iter_epoch_20
+[2026/04/21 09:51:27] ppocr INFO: epoch: [21/30], global_step: 500, lr: 0.000163, acc: 0.000000, norm_edit_dis: 0.306437, loss: 166.760925, avg_reader_cost: 0.29697 s, avg_batch_cost: 1.95468 s, avg_samples: 128.0, ips: 65.48388 samples/s, eta: 0:06:54, max_mem_reserved: 4069 MB, max_mem_allocated: 2413 MB
+[2026/04/21 09:51:36] ppocr INFO: cur metric, acc: 0.0, norm_edit_dis: 0.31390975754450734, fps: 96.08220576859033
+[2026/04/21 09:51:37] ppocr INFO: save best model is to /kaggle/working/exp_crnn_uit_hwdb/stage1/best_accuracy
+[2026/04/21 09:51:37] ppocr INFO: best metric, acc: 0.0, is_float16: False, norm_edit_dis: 0.31390975754450734, fps: 96.08220576859033, best_epoch: 21
+[2026/04/21 09:51:43] ppocr INFO: epoch: [21/30], global_step: 504, lr: 0.000159, acc: 0.000000, norm_edit_dis: 0.306437, loss: 167.137299, avg_reader_cost: 0.00030 s, avg_batch_cost: 0.30949 s, avg_samples: 25.6, ips: 82.71626 samples/s, eta: 0:06:46, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:51:44] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:52:16] ppocr INFO: epoch: [22/30], global_step: 520, lr: 0.000143, acc: 0.000000, norm_edit_dis: 0.306991, loss: 167.625702, avg_reader_cost: 0.30617 s, avg_batch_cost: 1.66024 s, avg_samples: 102.4, ips: 61.67789 samples/s, eta: 0:06:17, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:52:29] ppocr INFO: epoch: [22/30], global_step: 528, lr: 0.000135, acc: 0.000000, norm_edit_dis: 0.314001, loss: 164.062691, avg_reader_cost: 0.00063 s, avg_batch_cost: 0.65613 s, avg_samples: 51.2, ips: 78.03389 samples/s, eta: 0:06:01, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:52:30] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:52:55] ppocr INFO: epoch: [23/30], global_step: 540, lr: 0.000124, acc: 0.000000, norm_edit_dis: 0.319006, loss: 163.305740, avg_reader_cost: 0.28267 s, avg_batch_cost: 1.29898 s, avg_samples: 76.8, ips: 59.12343 samples/s, eta: 0:05:40, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:53:15] ppocr INFO: epoch: [23/30], global_step: 552, lr: 0.000112, acc: 0.000000, norm_edit_dis: 0.318643, loss: 164.335327, avg_reader_cost: 0.00123 s, avg_batch_cost: 0.97482 s, avg_samples: 76.8, ips: 78.78383 samples/s, eta: 0:05:16, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:53:16] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:53:34] ppocr INFO: epoch: [24/30], global_step: 560, lr: 0.000105, acc: 0.000000, norm_edit_dis: 0.315600, loss: 164.169441, avg_reader_cost: 0.28544 s, avg_batch_cost: 0.97352 s, avg_samples: 51.2, ips: 52.59256 samples/s, eta: 0:05:02, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:54:01] ppocr INFO: epoch: [24/30], global_step: 576, lr: 0.000091, acc: 0.000000, norm_edit_dis: 0.318458, loss: 161.874092, avg_reader_cost: 0.00193 s, avg_batch_cost: 1.31519 s, avg_samples: 102.4, ips: 77.85946 samples/s, eta: 0:04:31, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:54:01] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:54:14] ppocr INFO: epoch: [25/30], global_step: 580, lr: 0.000088, acc: 0.000000, norm_edit_dis: 0.322688, loss: 160.964973, avg_reader_cost: 0.30869 s, avg_batch_cost: 0.64469 s, avg_samples: 25.6, ips: 39.70877 samples/s, eta: 0:04:25, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:54:47] ppocr INFO: epoch: [25/30], global_step: 600, lr: 0.000072, acc: 0.000000, norm_edit_dis: 0.320996, loss: 162.930550, avg_reader_cost: 0.00379 s, avg_batch_cost: 1.65858 s, avg_samples: 128.0, ips: 77.17466 samples/s, eta: 0:03:46, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:54:47] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:54:48] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/iter_epoch_25
+[2026/04/21 09:55:26] ppocr INFO: epoch: [26/30], global_step: 620, lr: 0.000057, acc: 0.000000, norm_edit_dis: 0.328491, loss: 161.229309, avg_reader_cost: 0.29293 s, avg_batch_cost: 1.95500 s, avg_samples: 128.0, ips: 65.47330 samples/s, eta: 0:03:08, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:55:32] ppocr INFO: epoch: [26/30], global_step: 624, lr: 0.000055, acc: 0.000000, norm_edit_dis: 0.324370, loss: 162.027222, avg_reader_cost: 0.00020 s, avg_batch_cost: 0.32440 s, avg_samples: 25.6, ips: 78.91445 samples/s, eta: 0:03:01, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:55:33] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:56:05] ppocr INFO: epoch: [27/30], global_step: 640, lr: 0.000044, acc: 0.000000, norm_edit_dis: 0.327053, loss: 161.344536, avg_reader_cost: 0.30478 s, avg_batch_cost: 1.65012 s, avg_samples: 102.4, ips: 62.05616 samples/s, eta: 0:02:31, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:56:18] ppocr INFO: epoch: [27/30], global_step: 648, lr: 0.000039, acc: 0.000000, norm_edit_dis: 0.328605, loss: 160.356049, avg_reader_cost: 0.00072 s, avg_batch_cost: 0.64589 s, avg_samples: 51.2, ips: 79.26990 samples/s, eta: 0:02:15, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:56:19] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:56:44] ppocr INFO: epoch: [28/30], global_step: 660, lr: 0.000033, acc: 0.000000, norm_edit_dis: 0.328282, loss: 159.296524, avg_reader_cost: 0.26784 s, avg_batch_cost: 1.29211 s, avg_samples: 76.8, ips: 59.43749 samples/s, eta: 0:01:53, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:57:04] ppocr INFO: epoch: [28/30], global_step: 672, lr: 0.000027, acc: 0.000000, norm_edit_dis: 0.327193, loss: 159.129669, avg_reader_cost: 0.00147 s, avg_batch_cost: 0.97333 s, avg_samples: 76.8, ips: 78.90474 samples/s, eta: 0:01:30, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:57:04] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:57:23] ppocr INFO: epoch: [29/30], global_step: 680, lr: 0.000023, acc: 0.000000, norm_edit_dis: 0.329731, loss: 160.140633, avg_reader_cost: 0.26516 s, avg_batch_cost: 0.94684 s, avg_samples: 51.2, ips: 54.07441 samples/s, eta: 0:01:15, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:57:49] ppocr INFO: epoch: [29/30], global_step: 696, lr: 0.000016, acc: 0.000000, norm_edit_dis: 0.329043, loss: 160.569244, avg_reader_cost: 0.00162 s, avg_batch_cost: 1.32006 s, avg_samples: 102.4, ips: 77.57196 samples/s, eta: 0:00:45, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:57:50] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:58:01] ppocr INFO: epoch: [30/30], global_step: 700, lr: 0.000015, acc: 0.000000, norm_edit_dis: 0.329043, loss: 160.921112, avg_reader_cost: 0.27964 s, avg_batch_cost: 0.61947 s, avg_samples: 25.6, ips: 41.32557 samples/s, eta: 0:00:37, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:58:35] ppocr INFO: epoch: [30/30], global_step: 720, lr: 0.000008, acc: 0.000000, norm_edit_dis: 0.332746, loss: 158.101166, avg_reader_cost: 0.00362 s, avg_batch_cost: 1.67036 s, avg_samples: 128.0, ips: 76.62999 samples/s, eta: 0:00:00, max_mem_reserved: 4069 MB, max_mem_allocated: 2456 MB
+[2026/04/21 09:58:35] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/latest
+[2026/04/21 09:58:36] ppocr INFO: save model in /kaggle/working/exp_crnn_uit_hwdb/stage1/iter_epoch_30
+[2026/04/21 09:58:36] ppocr INFO: best metric, acc: 0.0, is_float16: False, norm_edit_dis: 0.31390975754450734, fps: 96.08220576859033, best_epoch: 21

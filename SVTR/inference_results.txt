@@ -1,0 +1,201 @@
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_1.jpg	Thứ trưởng Bộ tài nguyên và môi trường Đặng Hùng võ tâm đắc với	0.9575971364974976
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_10.jpg	xong quay ra đòi thỏa thuận lại...	0.9512536525726318
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_11.jpg	chưa kể để doanh nghiệp và người dân " nỏi chuyện " với nhau như	0.9370985627174377
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_12.jpg	vậy, quyễn cua cơ quan quản lý nhà nước sẽ mất đi. ". Tôi cũng có suy	0.9503259062767029
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_13.jpg	nghĩ như đồng chí " Bỏ được qui định này đi thì tốt. Cua g một lúc chúng	0.952784538269043
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_14.jpg	ta thực hiện hai cơ chế (vừa Nhà nước thực hiện thu hồi đất nhủ cách	0.9349358677864075
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_15.jpg	lân nay, vừa khgến khích nhà đầu hư thỏa thuận với người sử dụng	0.9284707307815552
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_16.jpg	đất) thì phức tạp - ông Trinh kiên Đĩnh, phó giám đốc sơ Tài	0.9216732382774353
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_17.jpg	Nguyên - môi trường và nhà đất Hà Nội, lên tiếng.	0.9578778147697449
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_18.jpg	Bảo vệ lập trường của cơ quan soạn thảo, Thủ trưởng Đặng Hùng Võ khẳng định	0.9738537669181824
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_19.jpg	ntrường hợp nhà đầu tư có nhu cầu thỏa thuận với người đang sử dụng đất, chúng	0.9852908253669739
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_2.jpg	cơ chế " khuyến khích nhà đầu tư thỏa thuận víni người sử đất để nhận	0.9434712529182434
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_20.jpg	ta cần khuyến khích vì N hà nước chẳng mắt cải gì cả ". ông Võ " kêu gọi " :	0.9587792754173279
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_21.jpg	chúng ta cần thay đổi trong quan điểm, không nên để hệ thống hành chính	0.9854568839073181
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_22.jpg	Ôm về mình nhiều quá, bởi ôm càng nhiều thì sai càng nhiều. Bộ trưởng Mai	0.9549362063407898
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_23.jpg	Ai Trực tiếp lời : Các nước đều áp dọng cơ chế tự thoaả thuận khi thu hồi	0.9420458674430847
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_24.jpg	đất.	0.9351819157600403
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_25.jpg	Ngay cả trường hợp ta không qui định, người dân và doanh ngiệp vẫu thực hiện	0.9806979298591614
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_26.jpg	cơ cdhế này. " Nếu cứ dùng quyên lực hành chính nhà nước với mô hình khuôn	0.9398748278617859
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_27.jpg	cứng, người dân sẽ kêu " - ông Trực nói. Chuyện " bố " - " con ". Phó Giám đốc	0.9632558822631836
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_28.jpg	Sở Tài nguyên - môi trưởng & nhà đất Hà Nội Trịnh Kiên Đĩnh đề nghị : thẩm	0.9320021867752075
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_29.jpg	quyền thu hồi đất, giao đất phải được thể hiện theo tỉnh thân " ông bố bao trùh"	0.9318141937255859
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_3.jpg	chuyển nhượng hoặc thuê quyềà sử dụng đất, nhận góp vốn bầng quyền sử	0.961894690990448
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_30.jpg	Bng ca ". Theo đó, UBND cấp tỉnh, thành phố được quyên thu hềi, giao đết	0.9591842293739319
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_31.jpg	thuậc thẩm quyền của UBND cấp quận, huyện (thay vì qui định như hiện nay,	0.9731493592262268
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_32.jpg	" ông bố " muốn làm điêu nàny phải thêng báo cho " ông con thực hện, vờn nhâu	0.9278051257133484
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_33.jpg	khô vừa không thể hiệu hương đi cải cách thủ tục hành chính).	0.9597517251968384
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_34.jpg	Lập tức Thứ trưởng Đặng Hhùng Võ phản củng : " ông bố " có quyền của " ông bố ",	0.9430646896362305
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_35.jpg	" Ông còn có quyền của " ông con ". Luật không cho phép " ông bố " làm thoy "ông	0.9672503471374512
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_36.jpg	con ". Trường hợp nào làm thay là phạm luột, chỉ có điều hiện nay các "ông	0.9732449650764465
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_37.jpg	con " không dám kêu mà thôi!	0.9643349647521973
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_4.jpg	dụng đất... " Nhưng tại hội nghị hôm qua, tiếng nói bừ các sơ tài nguyền	0.9536610841751099
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_5.jpg	và môi trường lại điều hành " loại bỏ " điều khoản này ra khỏi dư tháo .	0.9491593837738037
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_6.jpg	giám đốc Sở tài nguyêu và môi trường Hải Phòng ChuMinh Tuấn che	0.9570943713188171
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_7.jpg	biết thành phố cán g từng áp dụng cơ chế " thỏa thuận " trong một số	0.936398983001709
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_8.jpg	rất ít trường hợp, vậy mà đã gây phản ủúng Theo kiển dây chuyền khá	0.9521384835243225
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/250_9.jpg	mạnh : anh này nhận tiền rồi quay lại đòi nửa, anh kia thỏa thuận	0.9526234865188599
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_1.jpg	Chương trình hành đợng thực hiện Nghị quyết trung vơng 9 - khóa	0.9647839069366455
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_10.jpg	tối với ván bộ lãnh đạo, quán lý để xảy ra tham những, tiêu cực ở cơ	0.953961193561554
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_11.jpg	quan, đơn vự. Kiện toàn và tăng cường sức chiển đấu của tổ chức	0.9439578056335449
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_12.jpg	cơ sở Đảng. Tiếp trục đổi mới và nâng cao công tác cáh bệ. Tiếp tục	0.9443333148956299
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_13.jpg	đải mới phương thức lãnh đạc của cấp ủy Đảng theo nhương châm	0.9331773519515991
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_14.jpg	hướng mạnh về cơ sở.	0.9382618069648743
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_15.jpg	Về cải cách hành chính : Tập trung chấn chỉnh mạnh hơn nữa kỷ cương,	0.9638189673423767
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_16.jpg	lỳ luật trong bộ máy hành chính, nâng cao tỉnh thân trách nhiệm và	0.967391312122345
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_17.jpg	ý thức kỷ lật của cD -CC, nhất là tiên lỉnh vực nhà đất, đầu ti,.	0.9403077960014343
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_18.jpg	sinh doanh, trật tự xây dựng và giải quyết khiếu nại, tế cáo.	0.955318808555603
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_19.jpg	Xây dựng hoàn thiện hệ thống các quy trình thủ tục hành chính.	0.9640854597091675
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_2.jpg	IX cưa Đảng bộ TP.HCM Về xây dựng Đảng : tiếp tục chỉ tạo mạnh	0.9712047576904297
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_20.jpg	Kiên quyết chấn chỉnh bộ này hành chính cáo cấp, nhanh chóng	0.9400333762168884
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_21.jpg	khắc phục tình trạng quan liêu, cứa quyền, hách lịch.	0.9565643668174744
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_22.jpg	Xây dựng và phát triển đội ngũ CB - CC có chất lượng chuyên môn	0.9560652375221252
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_23.jpg	cao, có phảm chất, đạo đức. Kiểm tra, xử lý kiên quyết các vụ	0.969680905342102
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_24.jpg	tham những, lăng phí, làm thất thoát tài sản nha nước.. Về kinh	0.9337966442108154
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_25.jpg	tế : Tập trung mọi nổ lực nhằm cháo gỗ sán xuất kinh doanh,	0.9331993460655212
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_26.jpg	đưa tốc độ tăng trưởng 00P trên địa bàn TP đạt 12% nắm	0.9319965243339539
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_27.jpg	2004 và trên 12% năm 2005. Phát trến nhanh các ngành dịchoạụ	0.9354581832885742
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_28.jpg	tái cấu trúc cái ngành công nghiệp.	0.9529719948768616
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_29.jpg	Tiếp tục nhân ộng các mo hình huy động vớn đầu tư. Tộp trung khai	0.9646580815315247
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_3.jpg	mể, có hiệu quả cuợc vặn động xây dựng chính đốn Đảng theo tinh	0.9515541791915894
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_30.jpg	thác các nguồn vốn cho ngân sách. Tổng kết quá trình cổ phàn hái	0.9321513772010803
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_31.jpg	doanh nghiệp nhà nước và việc tể chức sắp xiếp lại doanh nghiệp nhà	0.9548430442810059
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_32.jpg	nước. Triển khai quyết định của TP về một số chính sách vưu đă.	0.94205641746521
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_33.jpg	đốc với các chự án có vốn đầu tư nước ngoài. Rà sánủ lại chương	0.9146532416343689
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_34.jpg	trình hội nhập hinh tế của TP. Về văn hóa - vã hội : đẩy mạnh	0.968815803527832
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_35.jpg	xã hội húa, phát triển xã hội hc tập, cưu tiên đầu tró ngân	0.9315001368522644
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_36.jpg	sách cho giáo dục - đào trạo.	0.9429749846458435
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_37.jpg	Nâng cao nẳng lực quản lý nhà nước trên các ấnh vực kinh doanh	0.9395268559455872
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_38.jpg	dịch vụ vẫn hóa; khắc phục những sơ hỏ, tiêu cực trong quản lý	0.954745352268219
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_39.jpg	và hoạt động văn hoá. Tiếp tục tập trung nguồn lực cho chương	0.9721236228942871
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_4.jpg	thần nghị quyết trung ương 6(lần 2). Theo đó, tiếp tục thực hiện việc	0.9668047428131104
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_40.jpg	trình 3 giảm...	0.9860211610794067
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_5.jpg	le khai nhà đất và cs sở xán mất kinh doanh của cán tộ - công chái,	0.9145075678825378
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_6.jpg	tăng cường thanh hiểm tra những nơi có dấu hiệu viphạm, đực bộự	0.9453109502792358
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_7.jpg	trong lĩnh vực đất đai và các công trình trọng điểm.	0.9625440835952759
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_8.jpg	Xư lý nghiêm minh theo pháp luật và kỷ luật của Đảng những người	0.9588335752487183
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/251_9.jpg	có hành vi rai trác và nhưữởng người bao che. Thực hiện tết các quy định	0.9676024317741394
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_1.jpg	Chương trình hành động thực tiện Nghụ quyết trung vông 9 - khóc 1X của bơng sộ	0.9306066632270813
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_10.jpg	tũng cường sức chiến đấu của tổ chức cơ sở Dảng. Tiếp tục đối mới và nông	0.9516361951828003
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_11.jpg	cao công tác cán bộ. Tiếp tục đổi mới phương thức lành đạo của cấp ảy	0.9500018358230591
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_12.jpg	Đang theo phương châm hướng mạnh về cơ sở.	0.9715397357940674
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_13.jpg	Về cải cách hành chính : Tập trung chấn chỉnh mạnh hơn nừa kỷ cưng, kỷ luệt trong	0.9568358063697815
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_14.jpg	bộ máy hành chính, nâng cao tinơ thần trưch nhệm và ý thíc kỷ liuật của CBXc	0.92714923620224
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_15.jpg	nhấi là trên lình vực nhà đất, đầu tự, kin3 2oan, trật tự xây dựng và	0.9488382935523987
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_16.jpg	giải quyết khiếu nại, tố cáo. Xây dựng hoàn thiện hệ thống các qy trìng	0.952865481376648
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_17.jpg	thủ tục hành chính. kiên quyễt chẫn chỉnh bộ máy hành chỉnh các cấp	0.9412938356399536
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_18.jpg	nhanh chóng khắc phục tình trạng quan liêu, của quyền, hách dịch.	0.9579233527183533
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_19.jpg	Xây dựng và phát triển đội ngù CB- Cê có chất lượng chuyên môn cao, có phẳm	0.9244272112846375
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_2.jpg	THUcN về xây dựng bảng : iếp tục chỉ đạo mạnh mẽ, có hiệu quả cuộc vận đọngnông	0.9109312891960144
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_20.jpg	chấi, đạo đúc. kiểm tra, xử ký kiên quyết các vự tham những, làng phí,	0.935808002948761
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_21.jpg	làm thấi thoát tài sản nhà nước... Về kinh tế : tập trung mọi nỗ lực	0.9173871874809265
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_22.jpg	nhằm tháo gỡ sản xuất kinh doanh, đưa tốo độ tăng trường GDP trên địa	0.9510958194732666
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_23.jpg	bàn TP đạt 12% năm 2004 và trên 12% năm 2005. Phái triển nhang	0.9637295603752136
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_24.jpg	các ngành dịch vụ, tái cấu trúc các ngành công nghiệp.	0.9709854125976562
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_25.jpg	Tiếp tục nhân rộng các mô hình. huy động vốn đầu tư. Tập trung khai thác	0.9570825099945068
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_26.jpg	các nguồn vốn cho ngàn sánh. Tổng kết quá trình cổ phần hóá doanh	0.9461090564727783
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_27.jpg	nghiệp nhà nước và việc tổ chức, sắp xấp lại doanh nghiệp nhà nước.	0.9574384689331055
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_28.jpg	Triển khai quyết định của TP về một số chính sách du đãi đối vài.	0.9368809461593628
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_29.jpg	các dự án có vốn đầu tư nước ngoài. Rà sáot lại các chương	0.956886887550354
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_3.jpg	duy chỉnh đón Đảng theo tinh thn nghị quyết trung ương 6 (Lên 2). Theo đó, trp ro	0.9220430254936218
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_30.jpg	trính hội nhập kinh tế của TP. về vàn hóa - xã hột; đấy mạnh xà	0.9300662279129028
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_31.jpg	hội hóa, phái triển xã hội học tập, ku tiên đầu tư ngân sách	0.9391308426856995
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_32.jpg	cho giáo dục - đào tạo.	0.980019748210907
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_33.jpg	Nàng cao nằng lực quản lý nhà nước trên các lình vực binh doanh dịch vụ	0.9693850874900818
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_34.jpg	văn hóu; khấc phục những sơ hỏ, tiàu cực trong quản lý và hạt động	0.9476226568222046
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_35.jpg	văn hóa. Tiếp tục tập trung nguồn lực cho crương trình 3 giảm...	0.9357532262802124
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_4.jpg	rộc hiện vệc kê khai nhà đết rà cơ sở sản riết kinh đoanh của cân lộ - ông	0.9213512539863586
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_5.jpg	hốc; táng cường thanh liểm tha những nơi có dấu hiệu i phạm, đợc bệt	0.9253636002540588
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_6.jpg	trong lĩn vực đất đái và các công trình trọng điểm.	0.9734686017036438
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_7.jpg	Xử lý nghiêm minh theo pháp luật và kỷ luật của Dảng những người có hàn	0.9563669562339783
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_8.jpg	vi sai trái và những người bao che. Thực hiện tốt các quy định đối bứi cán lộ lành	0.9497325420379639
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/252_9.jpg	đạo, quản lý để xảy ra tham những, tiều cực ở cơ quan, đơn vị. kiện toàn và	0.9638577103614807
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_1.jpg	Viết tiệp về rụ anh Trương Xuân Đạu. Nguy từ thệ t" bao " số phân của	0.8718876242637634
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_10.jpg	sai phạm củcủ công rình đường lên cổng A5 mấy năm lứớc đây, nhng nay	0.8916828036308289
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_11.jpg	mái hict niệc lom dúng com và tất đcp đã mang cần bao kự lug phiên phác	0.8578452467918396
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_12.jpg	cho nguời hang mội, những người mà tho bân và cùng xứng dang va dánh	0.8456176519393921
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_13.jpg	tuận biểệp sõ	0.8014780879020691
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_14.jpg	Thế nhung những liệp sì ây giờ resao? Nguan thì la thang, phiải bại, bẻ đhì	0.8646421432495117
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_15.jpg	vị hỏ, hè thì cày ai tiân con dường đô khị để lưản ve chai, phải tá túc trong	0.8557720184326172
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_16.jpg	nhùng căn chài tạm bị sông qua ngày ngốn sao mà thoang thý ! đóng lẽ phảủ đuạc	0.8463053703308105
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_17.jpg	trưnh thì trón bụ nhông ba người ày đà bị đấng Xuống đấy cũùng ca cạiạc	0.8068258762359619
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_18.jpg	cống! cũng may mà anh Đại đã không hiện, đó chấc là nipm can cả và	0.8891139626502991
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_19.jpg	là khẳng đinh để qnh mà các đông nghip, nguời thân lin cvồng né	0.8659992814064026
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_2.jpg	những người nới lên sự thật " gphái hành, nhiều bạn đạc đã bày tởỏ sự chia sẽ,	0.9356203079223633
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_20.jpg	anh không đon đậc rong việc thu dưấi niềm tin cừ lê phải mảa mnh.	0.840455949306488
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_21.jpg	Lai mùa, khi thanh tra đã xác định si pham sao không xử lý mà đũ ngặm	0.9076840281486511
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_22.jpg	lân ngày đếi vây? vải khảng phả tó ngải tong liình trục chuyệên mỗn nhưng	0.7538161277770996
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_23.jpg	có thì hình Quong công trình diến nân cảng A5 chắc nhằn phục vN hoại động cn	0.8883376121520996
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_24.jpg	các nhà đầu lư tauy khu đế cuối tôn Thuân. Vập thỉ kháng khấi phục mgay	0.8289391994476318
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_25.jpg	mà vòn để con đxờng xuàng cấp thâ thong có phaih góp khian phâi	0.786182701587677
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_26.jpg	bàm xán đi mài tuơng đều từ của Chảh phô hay không, mà cũng	0.8352715969085693
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_27.jpg	đầy nghìà với việi mát đi hao nhiên có hậi bìm việc và cản khiên cuốc sũng	0.828870952129364
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_28.jpg	của người baư đông - đồng bào - hay không?	0.8880391120910645
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_29.jpg	chúng la " hoai nghênh vài tiên hưang nhùng nệc làa tất của công nhân	0.8342803716659546
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_3.jpg	ng tộ anh Trương Xuân Đại. Mật họn đạc 67 trần ở Q. 11 đến qiủ tộng anh Trung	0.8970425128936768
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_30.jpg	xây dựng trong việc th ảng bion phản anh sai pham của công liểnh đường	0.8825609683990479
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_31.jpg	tưi cảng AS ", nhông chác Là không có lình Thứi hon nghenh và luán	0.8697887659072876
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_32.jpg	doáng chiết phực hân vái anh Đại và nhuôny đây kghicp là xư ky ngay	0.8502917885780334
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_33.jpg	những sai pham (đà ró mùa mươh) và có liện pháp biêu liên khắc phúc	0.9025452733039856
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_34.jpg	nhừng rai lòn đó. có như vảy mầu ận vào lê qhá mái đckhân phuc	0.8178526759147644
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_35.jpg	cả người đôn sẻ không còn phả đạy cơic cho cầm tina mình,	0.8044309020042419
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_36.jpg	Phai là mật côn chuyện tràng hoòng " nham công nhân dừng can ấy giều	0.8445878624916077
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_37.jpg	20 nguài vậy mà hầu như nay đà bng hạt bết. Chỉ con anh Đại vàn bấi	0.9089479446411133
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_38.jpg	ngần khác. thân phận, cuậc sàng của họ hi trớ, và điền mia mai cng	0.8306293487548828
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_39.jpg	như tồm chánh lòng tồi là phả hị đã xả thảivà co nghã để ri ga bh	0.7786418795585632
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_4.jpg	Xuân Đại 150.000 đồng, mạt cô gái tên Nhung ở Tân Bình qui bng 100.00ah,	0.9300742745399475
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_40.jpg	vợ conli lón , khất nghiập, lần vào cảnh đần lanhát nhu khệ aọt Vì no bị	0.8124140501022339
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_41.jpg	đê bìn điều đọợ Ba năn bận qua, chác hẩn đã hàng tăm, ngàn hả	0.8182713985443115
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_42.jpg	cân hải đo dự đến vái họ hạặc đến ti ngua krâng bạn bè đị hoàn sại chong	0.8068894147872925
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_43.jpg	chái, ngộn ngùr.	0.9304140210151672
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_44.jpg	và hâm nay-, chung bcũng cồi hải cân hảủnày vác chính mình.	0.9221711158752441
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_5.jpg	mạt thanh niên tên Hà đên quả 200.000d. Sanđó nùa là rất	0.882851243019104
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_6.jpg	nhiền lụm đạc gọc đên bày l3 1ụ chiasẻ, củng hộ	0.8888018727302551
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_7.jpg	Ban liên tập, báo Tuổi Tủ cũng quyết đinh qiả tặng nhám công nhôn	0.9252967238426208
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_8.jpg	đé tố c6ó tiên cức ở đường lên cổng A5 10 tuộn đồng. Đàng để nguải dân	0.8790352940559387
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/253_9.jpg	đặc cược cho niềm tim! Qua báo chí, ban thân lôn đã liệt vể vệc tô cao nhừng	0.8898375630378723
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_1.jpg	KHÁI QUÁT VỀ BIỂN ĐẢO VIỆT NAM	0.9769535064697266
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_10.jpg	gần và xa bờ, hợp thành phòng tuyến bảo vộ, kiểm soát và làm chú	0.977698564529419
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_11.jpg	vùng biểm.	0.988985538482666
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_12.jpg	Có vị trí chiến lược quan trọng : nối hền Thái Bình Dương, với Ấn Độ Dương,	0.9598407745361328
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_13.jpg	châu Á với châu Âu, châu Úc với Trung Đông. Giao lưu quốc tế thuận	0.9449911117553711
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_14.jpg	lợi, phát triển ngành biểm.	0.9643265008926392
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_15.jpg	Có khí hậu biển là vùng nhiệt đới tạo điều kiện cho ơnho vặt biển phát	0.9643970131874084
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_16.jpg	triển, tồm tại tốt.	0.9553173184394836
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_17.jpg	Có tài nguyên sinh vật và khoáng sản phong phú, đa dạng, quý hiếm.	0.984338104724884
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_18.jpg	Vùng biển và hải đảo nước ta có vị trí chĩễn lược hết sớc to lớm, có ảnh hưởng	0.9293684363365173
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_19.jpg	trực tiếp đến sợ nghiệp bảo vợ nền độc lập dân tộc và xêy dựng chủ nghĩa	0.9325317740440369
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_2.jpg	Nước ta giáp với biển Đông ở hai phía Đông và Nam. Vùng biển Việt Nam	0.9801989793777466
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_20.jpg	xã hội, có liên quan trực tiếp đến sự phồn vinh của đất nước, đến văn	0.9780799746513367
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_21.jpg	minh và hạnh phúc của nhân dân.	0.9691577553749084
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_3.jpg	là một phần biển Đông.	0.9666443467140198
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_4.jpg	Bờ biển dài ở. 260 km, từ Quảng Ninh đến Kiên Giang. Như vây cử 100 kn	0.9371211528778076
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_5.jpg	thì có 1 km bờ biển (trung kình của thể giởi là 500 km đất liềnm/ 1 km bờ biển).	0.9497634172439575
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_6.jpg	Biển có vùng nội thủy, lãnh hải, vùng đạc quyền kinh tế và thềm lục nđịa với	0.960307776927948
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_7.jpg	tiện tích trên 1 triệu km2 lgắp 3 diện tích đất liền : Hriệu hmn2/	0.9265323877334595
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_8.jpg	3ơ0.000 kồn)	0.7450308799743652
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/254_9.jpg	Trong đó có 2 quằn đảo Hoàng Sa, Trường Sa và 2.577 đảo lổn, nhỏ,	0.9433735013008118
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_1.jpg	BẢN CHẤT CỦA THÀNH CÔNG	0.9714548587799072
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_10.jpg	nàu.. đan cháy. Nhưng nhìn mâm cơm, mẹ vểm cầời. Đớ v hai lố cn không thể thành	0.9080815315246582
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_11.jpg	công trên"thiếu trừờng "sếp núc,nhưng lạithành ông khi tặn mẹ đo tồng củo tỉn yệi.	0.8274528980255127
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_12.jpg	Một noón guà ý nghểa hơu cả chững nón quà qug guái, hạch phác đy baghbah ci trngaất	0.8019554615020752
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_13.jpg	mẹ.	0.9119448065757751
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_14.jpg	Thành công còm là hành ánh một cậu bé bị dị tật ở châo, không bao giờ đi lại bình thường	0.9475237131118774
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_15.jpg	tược. Từ nhả cậu đã nuối ước mơ trở thành cầu thủ bóng đá. Sau bao nở lực khẽ luyện, cậu	0.9165341854095459
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_16.jpg	bé trỗ thành cầu thủ dự bị trong một đội bóng nhỏ, rà chưa bao giờ được chính thức ra sân.	0.9435449242591858
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_17.jpg	Nhưng đó không phải là thất bại. Trái bại, thành công đã nở hen khi cậu bé năm xửm, với bao	0.9416371583938599
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_18.jpg	nghị lực và quyết tâm, đã chiến thắng hoàn cảnh để heo điời ưứớc mơ từ ngày thơ bá.	0.938127338886261
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_19.jpg	Thành công ấy, liệu có mấy người đạt được?	0.9914005994796753
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_2.jpg	tã bao giờ bạn tự hỏi thành công bà gì mà bao kẻ tỏ cả cuộc đời mnh theo điồi ?. Phải chẳng	0.928121030330658
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_20.jpg	Sau mỗi mua thi đại học, có bao ởử tử " buồn rầu khi biết mình trở thành "sĩ tổ " Hai bày điểm,	0.9087375998497009
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_21.jpg	cao thật đấy. Nhưng cao mà làm gì khi N02 lấy tới hai bây phằy nằm ? tó thật ra không phải	0.9391327500343323
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_22.jpg	là thất bại, chỉ là khi thành công - bị - trì - hoão mà thên. Quộc sống vẫn chào đún họ với	0.957183837890625
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_23.jpg	NV2, NV3.Quan trọng là họ đã nổ lực lết sức đã khằng định nình. tó bà ý nghĩa vạn nguyên	0.925376296043396
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_24.jpg	của các kỳ thi, và cũng là bản chất của thành công.	0.9832150936126709
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_3.jpg	đó là kết quả hoàn hảo trong công việc, sự chính xác đến từng chi tiết? Hay đó bà cách nói	0.9662684202194214
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_4.jpg	khác của từ thành đạt, nghĩa là có được ciộc sống iàu sang, đực mọi người nẽ phục?	0.943587601184845
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_5.jpg	Vậy thì bạn hãy dành chút thời gian để lặng mình suy ngẫm.	0.9640933871269226
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_6.jpg	Tộa sống sẽ chỉ cho bạn có những người thành đạt được thành ông theo một cách gản lị đến kừ	0.9260237216949463
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_7.jpg	gờ	0.9543010592460632
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_8.jpg	Thành công là khi bố và con trai có dũng khí bước sào bếp, nãu những món ăn mẹ thích nhân	0.9449587464332581
+/kaggle/input/datasets/khangphantrnvn/uit-handwriten-dataset/UIT_HWDB_line_converted/test_data/images/255_9.jpg	ngày 8- 3 . Món canh có thề hỉ mặn, mm cá sốt đáng l phải có mài đì sưận thì lại ngà song	0.8950363993644714
