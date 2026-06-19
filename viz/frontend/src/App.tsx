@@ -12,7 +12,8 @@ import { ArchitectureSection } from "@/components/ArchitectureSection";
 import { TrainingSection } from "@/components/TrainingSection";
 import { BenchmarkSection } from "@/components/BenchmarkSection";
 import { useGradioInfer } from "@/hooks/useGradioInfer";
-import { resolveGradioUrl } from "@/lib/gradio";
+import { resolveGradioUrl, spellCheck } from "@/lib/gradio";
+
 
 const MODELS = [
   {
@@ -36,11 +37,33 @@ export default function App() {
   const [image, setImage] = useState<UploadedImage | null>(null);
   const { status, response, error, run } = useGradioInfer();
 
+  const [spellCorrected, setSpellCorrected] = useState<string | null>(null);
+  const [isSpellChecking, setIsSpellChecking] = useState<boolean>(false);
+  const [spellCheckError, setSpellCheckError] = useState<string | null>(null);
+
   const gradioUrl = useMemo(() => resolveGradioUrl(), []);
 
   const onRun = async () => {
     if (!image) return;
+    setSpellCorrected(null);
+    setSpellCheckError(null);
+    setIsSpellChecking(false);
     await run(image.file, config.model, config.usePreprocess);
+  };
+
+  const handleSpellCheck = async () => {
+    if (!response || response.results.length === 0) return;
+    setIsSpellChecking(true);
+    setSpellCheckError(null);
+    try {
+      const rawText = response.results.map((r) => r.text).join("\n");
+      const corrected = await spellCheck(rawText);
+      setSpellCorrected(corrected);
+    } catch (err) {
+      setSpellCheckError(err instanceof Error ? err.message : String(err));
+    } finally {
+      setIsSpellChecking(false);
+    }
   };
 
   return (
@@ -75,6 +98,10 @@ export default function App() {
                 response={response}
                 error={error}
                 showRaw={config.showRaw}
+                spellCorrected={spellCorrected}
+                isSpellChecking={isSpellChecking}
+                spellCheckError={spellCheckError}
+                onSpellCheck={handleSpellCheck}
               />
             </div>
           </div>

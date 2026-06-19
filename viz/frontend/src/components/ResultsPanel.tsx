@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { AlertTriangle, ClipboardCopy, Cpu, FileText, Inbox, ScanText, Timer } from "lucide-react";
+import { AlertTriangle, ClipboardCopy, Cpu, FileText, Inbox, ScanText, Timer, Sparkles, Loader2, Check } from "lucide-react";
 import { useCallback, useState } from "react";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -12,6 +12,10 @@ type Props = {
   response: InferResponse | null;
   error: string | null;
   showRaw: boolean;
+  spellCorrected: string | null;
+  isSpellChecking: boolean;
+  spellCheckError: string | null;
+  onSpellCheck: () => void;
 };
 
 function confidenceTone(conf: number): { label: string; cls: string; tone: "green" | "amber" | "red" } {
@@ -20,7 +24,16 @@ function confidenceTone(conf: number): { label: string; cls: string; tone: "gree
   return { label: "Low", cls: "bg-rose-500", tone: "red" };
 }
 
-export function ResultsPanel({ status, response, error, showRaw }: Props) {
+export function ResultsPanel({
+  status,
+  response,
+  error,
+  showRaw,
+  spellCorrected,
+  isSpellChecking,
+  spellCheckError,
+  onSpellCheck,
+}: Props) {
   return (
     <Card>
       <CardHeader>
@@ -50,7 +63,15 @@ export function ResultsPanel({ status, response, error, showRaw }: Props) {
           <ErrorState key="error" message={error ?? "Unknown error."} />
         ) : status === "success" && response ? (
           response.results.length > 0 ? (
-            <SuccessResults key="ok" response={response} showRaw={showRaw} />
+            <SuccessResults
+              key="ok"
+              response={response}
+              showRaw={showRaw}
+              spellCorrected={spellCorrected}
+              isSpellChecking={isSpellChecking}
+              spellCheckError={spellCheckError}
+              onSpellCheck={onSpellCheck}
+            />
           ) : (
             <EmptyResults key="empty" message="No text detected. Try enabling Adaptive thresholding." raw={showRaw ? response.raw : undefined} />
           )
@@ -135,17 +156,111 @@ function EmptyResults({ message, raw }: { message: string; raw?: string | undefi
   );
 }
 
-function SuccessResults({ response, showRaw }: { response: InferResponse; showRaw: boolean }) {
+function SuccessResults({
+  response,
+  showRaw,
+  spellCorrected,
+  isSpellChecking,
+  spellCheckError,
+  onSpellCheck,
+}: {
+  response: InferResponse;
+  showRaw: boolean;
+  spellCorrected: string | null;
+  isSpellChecking: boolean;
+  spellCheckError: string | null;
+  onSpellCheck: () => void;
+}) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = useCallback(async () => {
+    if (!spellCorrected) return;
+    try {
+      await navigator.clipboard.writeText(spellCorrected);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1400);
+    } catch {
+      /* ignore */
+    }
+  }, [spellCorrected]);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 4 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -4 }}
-      className="space-y-3"
+      className="space-y-4"
     >
-      {response.results.map((r, idx) => (
-        <ResultRow key={idx} text={r.text} conf={r.conf} elapsed={response.elapsed} />
-      ))}
+      <div className="space-y-3">
+        {response.results.map((r, idx) => (
+          <ResultRow key={idx} text={r.text} conf={r.conf} elapsed={response.elapsed} />
+        ))}
+      </div>
+
+      <div className="border-t border-lavender-100/60 pt-4 mt-2">
+        <div className="flex items-center justify-between mb-3">
+          <h4 className="text-xs font-semibold uppercase tracking-wider text-ink-soft">
+            Spell Correction
+          </h4>
+        </div>
+
+        {isSpellChecking ? (
+          <div className="flex items-center gap-2 text-sm text-ink-muted bg-lavender-50/30 border border-lavender-100/50 rounded-2xl p-4 animate-pulse">
+            <Loader2 className="h-4 w-4 animate-spin text-lavender-500" />
+            <span>Đang sửa chính tả...</span>
+          </div>
+        ) : spellCheckError ? (
+          <div className="flex items-start gap-2.5 text-xs text-rose-700 bg-rose-50/60 border border-rose-100 rounded-2xl p-4">
+            <AlertTriangle className="h-4 w-4 shrink-0 mt-0.5" />
+            <div>
+              <p className="font-semibold">Lỗi sửa chính tả</p>
+              <p className="mt-0.5 text-rose-700/80">{spellCheckError}</p>
+              <Button
+                variant="secondary"
+                size="sm"
+                className="mt-2 text-rose-700 border-rose-200/50 hover:bg-rose-50"
+                onClick={onSpellCheck}
+              >
+                Thử lại
+              </Button>
+            </div>
+          </div>
+        ) : spellCorrected ? (
+          <div className="group relative rounded-2xl border border-dashed border-lavender-300 bg-lavender-50/20 p-4 transition-colors hover:border-lavender-400">
+            <div className="flex items-start justify-between gap-3">
+              <p className="font-display text-lg font-medium leading-snug text-ink whitespace-pre-wrap">
+                {spellCorrected}
+              </p>
+              <button
+                type="button"
+                onClick={handleCopy}
+                className="opacity-0 transition-opacity group-hover:opacity-100 focus:opacity-100 shrink-0"
+                aria-label="Copy corrected text"
+              >
+                {copied ? (
+                  <Check className="h-4 w-4 text-emerald-500" />
+                ) : (
+                  <ClipboardCopy className="h-4 w-4 text-ink-soft hover:text-lavender-600" />
+                )}
+              </button>
+            </div>
+            <div className="mt-2 flex items-center gap-1.5 text-[10px] font-medium text-lavender-500">
+              <Sparkles className="h-3 w-3" />
+              <span>Đã sửa bởi bmd1905/vietnamese-correction-v2</span>
+            </div>
+          </div>
+        ) : (
+          <Button
+            variant="secondary"
+            className="w-full flex items-center justify-center gap-2"
+            onClick={onSpellCheck}
+          >
+            <Sparkles className="h-4 w-4 text-lavender-500" />
+            <span>Sửa chính tả</span>
+          </Button>
+        )}
+      </div>
+
       {showRaw ? <RawLogs raw={response.raw} /> : null}
     </motion.div>
   );

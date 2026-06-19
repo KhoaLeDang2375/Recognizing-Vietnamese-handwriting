@@ -83,3 +83,14 @@ export async function infer(
   if (isInferResponse(payload)) return payload;
   return { ...FALLBACK, raw: JSON.stringify(payload ?? null, null, 2) };
 }
+
+export async function spellCheck(rawText: string): Promise<string> {
+  const client = await getClient();
+  const result = await client.predict("/spell_check", [rawText]);
+  const payload = Array.isArray(result.data) ? result.data[0] : result.data;
+  if (typeof payload === "string") {
+    return payload;
+  }
+  throw new Error("Invalid response from spell check API: " + JSON.stringify(payload));
+}
+
