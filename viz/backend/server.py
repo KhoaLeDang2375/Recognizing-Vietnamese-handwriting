@@ -38,6 +38,82 @@ from inference import (
     run_inference,
 )
 
+# ── Spell Correction Model ──────────────────────────────────────────────────
+print("[viz] Loading spell correction model 'bmd1905/vietnamese-correction-v2'...")
+try:
+    import torch
+    from transformers import pipeline
+    device = 0 if torch.cuda.is_available() else -1
+    corrector = pipeline(
+        "text2text-generation",
+        model="bmd1905/vietnamese-correction-v2",
+        device=device
+    )
+    print(f"[viz] Spell correction model loaded successfully on device: {device}")
+except Exception as e:
+    print(f"[viz] Could not load spell correction model: {e}", file=sys.stderr)
+    corrector = None
+
+
+def spell_correct(raw_text: str) -> str:
+    """Correct Vietnamese spelling errors in batch using BARTpho, with detailed logging."""
+    import time
+    
+    print("-" * 40, flush=True)
+    print(f"[viz][spell_correct] Received request.", flush=True)
+    print(f"[viz][spell_correct] Input text:\n{raw_text!r}", flush=True)
+    
+    if not raw_text or not raw_text.strip():
+        print("[viz][spell_correct] Input is empty or whitespace.", flush=True)
+        print("-" * 40, flush=True)
+        return raw_text
+        
+    if corrector is None:
+        print("[viz][spell_correct] Corrector model is not loaded (corrector is None)!", flush=True)
+        print("-" * 40, flush=True)
+        return raw_text + " (Spell correction model not loaded)"
+
+    t_start = time.time()
+    lines = raw_text.splitlines()
+    print(f"[viz][spell_correct] Total lines split: {len(lines)}", flush=True)
+    
+    non_empty_indices = [i for i, line in enumerate(lines) if line.strip()]
+    non_empty_lines = [lines[i] for i in non_empty_indices]
+    
+    if not non_empty_lines:
+        print("[viz][spell_correct] No non-empty lines to process.", flush=True)
+        print("-" * 40, flush=True)
+        return raw_text
+
+    print(f"[viz][spell_correct] Processing {len(non_empty_lines)} non-empty lines...", flush=True)
+    for idx, line in enumerate(non_empty_lines):
+        print(f"  Line {idx+1}/{len(non_empty_lines)}: {line!r}", flush=True)
+
+    try:
+        t0 = time.time()
+        # Call the pipeline on the batch
+        batch_results = corrector(non_empty_lines, max_length=256, batch_size=len(non_empty_lines))
+        elapsed = time.time() - t0
+        print(f"[viz][spell_correct] Model execution completed in {elapsed:.4f} seconds.", flush=True)
+        
+        for idx, res_idx in enumerate(non_empty_indices):
+            original = lines[res_idx]
+            corrected = batch_results[idx]["generated_text"]
+            print(f"  Line {idx+1} result: {original!r} -> {corrected!r}", flush=True)
+            lines[res_idx] = corrected
+    except Exception as e:
+        elapsed = time.time() - t_start
+        print(f"[viz][spell_correct] ERROR during batch prediction (elapsed {elapsed:.4f}s): {e}", file=sys.stderr, flush=True)
+        import traceback
+        traceback.print_exc()
+        
+    final_text = "\n".join(lines)
+    print(f"[viz][spell_correct] Total time elapsed: {time.time() - t_start:.4f} seconds.", flush=True)
+    print("-" * 40, flush=True)
+    return final_text
+
+
+
 # ── Paths & config ──────────────────────────────────────────────────────────
 HERE = Path(__file__).resolve().parent
 FRONTEND_DIST = (HERE.parent / "frontend" / "dist").resolve()
@@ -171,6 +247,16 @@ def build_demo() -> gr.Blocks:
             inputs=[image_in, model_in, prep_in],
             outputs=out,
             api_name="infer",
+        )
+
+        spell_in = gr.Textbox(visible=False)
+        spell_out = gr.Textbox(visible=False)
+        spell_btn = gr.Button(visible=False)
+        spell_btn.click(
+            fn=spell_correct,
+            inputs=[spell_in],
+            outputs=spell_out,
+            api_name="spell_check",
         )
     return demo
 
